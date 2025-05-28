@@ -1,0 +1,285 @@
+
+[2025-05-29 01:15:53]
+Girdi: 35000 tlden ucuz olsun
+Özellik 1 Tahminleri:
+  price: 15000 (0.96)
+  brand: none (0.98)
+  os: none (0.96)
+  usage: none (1.00)
+  ram: none (1.00)
+  storage: none (1.00)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (1.00)
+  Çıkarılan Sayısal Değerler: price=35000.0
+--------------------------------------------------
+
+[2025-05-29 01:16:00]
+Girdi: rami 8 olsun
+Özellik 1 Tahminleri:
+  price: none (0.94)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: 8 (0.47)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:16:08]
+Girdi: rami 12 olsun
+Özellik 1 Tahminleri:
+  price: none (0.94)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: 8 (0.47)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:16:22]
+Girdi: kamerası iyi olsun android olsun. bataryası iyi olsun
+Özellik 1 Tahminleri:
+  price: none (0.89)
+  brand: none (0.90)
+  os: android (0.97)
+  usage: camera (0.99)
+  ram: none (1.00)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: good (0.94)
+  screen: none (0.98)
+Özellik 2 Tahminleri:
+  price: none (0.94)
+  brand: none (0.88)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (1.00)
+  storage: none (0.99)
+  battery: good (0.91)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:16:56]
+Girdi: ram 16
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:16:59]
+Girdi: ram 10
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:17:00]
+Girdi: ram 6
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:17:01]
+Girdi: ram 8
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:17:03]
+Girdi: ram 12
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:17:05]
+Girdi: ram 11
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:17:07]
+Girdi: ram 20
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+--------------------------------------------------
+
+[2025-05-29 01:17:10]
+Girdi: ram 12 gb
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+  Çıkarılan Sayısal Değerler: ram=12.0
+--------------------------------------------------
+
+[2025-05-29 01:17:14]
+Girdi: ram 12 gb
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+  Çıkarılan Sayısal Değerler: ram=12.0
+--------------------------------------------------
+
+[2025-05-29 01:17:17]
+Girdi: ram 16 gb
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+  Çıkarılan Sayısal Değerler: ram=16.0
+--------------------------------------------------
+
+[2025-05-29 01:17:21]
+Girdi: ram 8 gb
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+  Çıkarılan Sayısal Değerler: ram=8.0
+--------------------------------------------------
+
+[2025-05-29 02:19:49]
+Girdi: 8 gb ram
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+  Çıkarılan Sayısal Değerler: ram=8.0
+--------------------------------------------------
+
+[2025-05-29 02:19:58]
+Girdi: 8 gb ram kamerası iyi android bataryası iyi
+Özellik 1 Tahminleri:
+  price: any (0.98)
+  brand: none (0.99)
+  os: android (0.97)
+  usage: camera (0.99)
+  ram: none (0.45)
+  storage: none (0.99)
+  battery: good (0.97)
+  camera: good (0.95)
+  screen: none (0.99)
+  Çıkarılan Sayısal Değerler: ram=8.0
+--------------------------------------------------
+
+[2025-05-29 02:20:16]
+Girdi: 8 gb ram kamerası iyi android bataryası iyi depolaması iyi 40000 tl
+Özellik 1 Tahminleri:
+  price: any (1.00)
+  brand: none (0.99)
+  os: android (0.97)
+  usage: camera (0.99)
+  ram: none (0.47)
+  storage: good (0.83)
+  battery: good (0.97)
+  camera: good (0.93)
+  screen: none (0.99)
+  Çıkarılan Sayısal Değerler: ram=8.0, price=40000.0
+--------------------------------------------------
+
+[2025-05-29 02:20:36]
+Girdi: 8 gb ram
+Özellik 1 Tahminleri:
+  price: none (0.55)
+  brand: none (0.94)
+  os: none (0.90)
+  usage: none (0.99)
+  ram: none (0.43)
+  storage: none (0.99)
+  battery: none (0.98)
+  camera: none (1.00)
+  screen: none (0.99)
+  Çıkarılan Sayısal Değerler: ram=8.0
+--------------------------------------------------
