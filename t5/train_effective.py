@@ -41,8 +41,8 @@ def augment_input(text):
     
     # Sinonim değişimleri
     synonyms = {
-        'telefon': ['telefon', 'cep telefonu', 'akilli telefon'],
-        'oner': ['oner', 'onerisi', 'onerir misin', 'tavsiye et'],
+        'telefon': ['telefon', 'cep telefonu', 'akilli telefon',"mobil","cihaz"],
+        'oner': ['oner', 'onerisi', 'onerir misin', 'tavsiye et',"goster","soyle","ver"],
         'iyi': ['iyi', 'kaliteli', 'guzel', 'mukemmel'],
         'ucuz': ['ucuz', 'uygun fiyatli', 'ekonomik'],
         'oyun': ['oyun', 'game', 'gaming'],
@@ -403,9 +403,10 @@ class EnhancedPhoneT5Model:
             num_train_epochs=epochs,
             per_device_train_batch_size=batch_size,
             per_device_eval_batch_size=batch_size,
-            learning_rate=1e-4,  # 800 örnek için biraz yüksek
+            learning_rate=2e-5,  # 800 örnek için biraz yüksek
             warmup_ratio=0.1,
-            weight_decay=0.02,   # Daha güçlü regularization
+            warmup_steps=100,
+            weight_decay=0.01,   # Daha güçlü regularization
             logging_dir='./logs',
             logging_steps=25,    # Daha sık log
             eval_strategy='steps',
@@ -561,9 +562,9 @@ def main():
         # Eğitim
         model.train(
             data_file='training_data.txt',
-            epochs=50,
-            batch_size=16,
-            learning_rate=5e-5
+            epochs=25,
+            batch_size=4,
+            learning_rate=1e-5
         )
 
         print("\nEğitim tamamlandı!")
