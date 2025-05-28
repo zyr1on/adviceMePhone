@@ -1,17 +1,16 @@
-import joblib
-import numpy as np
 import re
+import joblib
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import LabelEncoder
 
-class PhonePredictor:
-    def __init__(self, model_path):
-        print("Model yükleniyor...")
-        model_data = joblib.load(model_path)
-        self.vectorizer = model_data['vectorizer']
-        self.models = model_data['models']
-        self.label_encoders = model_data['label_encoders']
-        self.feature_names = model_data['feature_names']
-        print("Model başarıyla yüklendi!")
-    
+class PhoneRecommendationModel:
+    def __init__(self):
+        self.vectorizer = TfidfVectorizer(max_features=1000, ngram_range=(1, 3))
+        self.models = {}
+        self.label_encoders = {}
+        self.feature_names = ['price', 'brand', 'os', 'usage', 'ram', 'storage', 'battery', 'camera', 'screen']
+        
     def preprocess_text(self, text):
         # Türkçe karakterleri normalize et
         text = text.lower()
@@ -19,83 +18,69 @@ class PhonePredictor:
         text = text.replace('ö', 'o').replace('ş', 's').replace('ü', 'u')
         return text
     
-    def predict(self, input_text):
-        # Preprocess input
-        processed_text = self.preprocess_text(input_text)
+    def extract_features_from_output(self, output_text):
+        features = {f: 'none' for f in self.feature_names}
+        parts = output_text.split(';')
+        for part in parts:
+            part = part.strip()
+            if ':' in part:
+                key, value = part.split(':', 1)
+                key = key.strip()
+                value = value.strip()
+                if key in self.feature_names:
+                    features[key] = value
+        return features
+    
+    def prepare_training_data(self, data_file):
+        X_texts = []
+        y_dict = {f: [] for f in self.feature_names}
         
-        # Vectorize input
-        X_vec = self.vectorizer.transform([processed_text])
+        with open(data_file, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
         
-        # Predict for each feature
-        predictions = {}
-        confidence_scores = {}
+        for line in lines:
+            line = line.strip()
+            if '->' not in line:
+                continue
+            input_text, output_text = map(str.strip, line.split('->', 1))
+            processed_input = self.preprocess_text(input_text)
+            X_texts.append(processed_input)
+            
+            features = self.extract_features_from_output(output_text)
+            for f in self.feature_names:
+                y_dict[f].append(features[f])
+        
+        return X_texts, y_dict
+    
+    def train(self, data_file):
+        print("Veri hazırlanıyor...")
+        X, y_dict = self.prepare_training_data(data_file)
+        
+        print(f"{len(X)} adet örnek bulundu.")
+        print("Metinler vektörleştiriliyor...")
+        X_vectorized = self.vectorizer.fit_transform(X)
         
         for feature in self.feature_names:
-            if feature in self.models:
-                # Get prediction
-                pred_encoded = self.models[feature].predict(X_vec)[0]
-                pred_proba = self.models[feature].predict_proba(X_vec)[0]
-                
-                # Decode prediction
-                try:
-                    prediction = self.label_encoders[feature].inverse_transform([pred_encoded])[0]
-                    confidence = np.max(pred_proba)
-                    
-                    # Only include if confidence is reasonable and not 'none'
-                    if confidence > 0.1 and prediction != 'none':
-                        predictions[feature] = prediction
-                        confidence_scores[feature] = confidence
-                except:
-                    continue
+            print(f"'{feature}' özelliği için model eğitiliyor...")
+            le = LabelEncoder()
+            y = le.fit_transform(y_dict[feature])
+            model = RandomForestClassifier(n_estimators=100, random_state=42)
+            model.fit(X_vectorized, y)
+            self.models[feature] = model
+            self.label_encoders[feature] = le
         
-        return predictions, confidence_scores
+        print("Tüm modeller eğitildi.")
     
-    def format_output(self, predictions):
-        if not predictions:
-            return "Belirtilen kriterler anlaşılamadı."
-        
-        output_parts = []
-        for feature, value in predictions.items():
-            output_parts.append(f"{feature}: {value}")
-        
-        return "; ".join(output_parts)
-
-def main():
-    try:
-        predictor = PhonePredictor('phone_model.pkl')
-        
-        print("Telefon Öneri Sistemi")
-        print("Çıkmak için 'quit' yazın")
-        print("-" * 50)
-        
-        while True:
-            user_input = input("\nTelefon isteğinizi yazın: ").strip()
-            
-            if user_input.lower() in ['quit', 'exit', 'çık', 'çıkış']:
-                print("Görüşürüz!")
-                break
-            
-            if not user_input:
-                print("Lütfen bir istek yazın.")
-                continue
-            
-            # Predict
-            predictions, confidence_scores = predictor.predict(user_input)
-            
-            # Format and display output
-            output = predictor.format_output(predictions)
-            print(f"\nSonuç: {output}")
-            
-            # Show confidence scores if desired
-            if predictions:
-                print("\nGüven skorları:")
-                for feature, confidence in confidence_scores.items():
-                    print(f"  {feature}: {confidence:.2f}")
-    
-    except FileNotFoundError:
-        print("Model dosyası bulunamadı! Önce train.py'yi çalıştırın.")
-    except Exception as e:
-        print(f"Hata oluştu: {e}")
+    def save_model(self, path):
+        joblib.dump({
+            'vectorizer': self.vectorizer,
+            'models': self.models,
+            'label_encoders': self.label_encoders,
+            'feature_names': self.feature_names
+        }, path)
+        print(f"Model '{path}' dosyasına kaydedildi.")
 
 if __name__ == "__main__":
-    main()
+    model = PhoneRecommendationModel()
+    model.train("training_data.txt")
+    model.save_model("phone_model.pkl")
