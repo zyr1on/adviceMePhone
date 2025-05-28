@@ -4,9 +4,15 @@ telefon öner -> price:any; brand:none; os:none; usage:none; ram:none; storage:n
 oyun için telefon -> price:any; brand:none; os:none; usage:game; ram:none; storage:none; battery:none; camera:none; screen:none;
 iyi kameralı telefon -> price:any; brand:none; os:none; usage:photo; ram:none; storage:none; battery:none; camera:good; screen:none;
 bütçe 10000 tl -> price:10000; brand:none; os:none; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 3000 tl -> price:3000; brand:none; os:none; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 4000 tl -> price:4000; brand:none; os:none; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 5000 tl -> price:5000; brand:none; os:none; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 5500 tl -> price:5500; brand:none; os:none; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 6000 tl -> price:6000; brand:none; os:none; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
 android telefon istiyorum -> price:any; brand:none; os:android; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
 iphone 128 gb -> price:any; brand:apple; os:ios; usage:none; ram:none; storage:128; battery:none; camera:none; screen:none;
-samsung oyun telefonu -> price:any; brand:samsung; os:android; usage:game; ram:none; storage:none; battery:none; camera:none; screen:none;
+iphone iyi hafıza iyi batarya -> price:any; brand:apple; os:ios; usage:none; ram:none; storage:good; battery:good; camera:none; screen:none;
+samsung oyun telefonu -> price:any; brand:samsung; os:android; usage:game; ram:8; storage:none; battery:none; camera:none; screen:none;
 xiaomi kamerası iyi olan -> price:any; brand:xiaomi; os:android; usage:photo; ram:none; storage:none; battery:none; camera:good; screen:none;
 uzun pil ömrü olan telefon -> price:any; brand:none; os:none; usage:none; ram:none; storage:none; battery:good; camera:none; screen:none;
 8 gb ramli android -> price:any; brand:none; os:android; usage:none; ram:8; storage:none; battery:none; camera:none; screen:none;
@@ -18,6 +24,7 @@ bataryası iyi 128 gb telefon -> price:any; brand:none; os:none; usage:none; ram
 6 gb ramli oyun telefonu -> price:any; brand:none; os:none; usage:game; ram:6; storage:none; battery:none; camera:none; screen:none;
 ekranı büyük android telefon -> price:any; brand:none; os:android; usage:none; ram:none; storage:none; battery:none; camera:none; screen:good;
 bütçem 18000 tl android fotoğraf telefonu -> price:18000; brand:none; os:android; usage:photo; ram:none; storage:none; battery:none; camera:good; screen:none;
+bütçem 22500 tl android fotoğraf telefonu -> price:22500; brand:none; os:android; usage:photo; ram:none; storage:none; battery:none; camera:good; screen:none;
 hızlı oyun oynayabileceğim android telefon -> price:any; brand:none; os:android; usage:game; ram:none; storage:none; battery:none; camera:none; screen:none;
 iyi depolama ve batarya samsung -> price:any; brand:samsung; os:android; usage:none; ram:none; storage:good; battery:good; camera:none; screen:none;
 15000 tl altında kamerası iyi telefon -> price:15000; brand:none; os:none; usage:photo; ram:none; storage:none; battery:none; camera:good; screen:none;
@@ -29,7 +36,12 @@ hafızası iyi olan ve bataryası uzun giden telefon -> price:any; brand:none; o
 samsung fotoğraf ve oyun için -> price:any; brand:samsung; os:android; usage:game; ram:none; storage:none; battery:none; camera:good; screen:none;
 xiaomi 128 gb hafıza -> price:any; brand:xiaomi; os:android; usage:none; ram:none; storage:128; battery:none; camera:none; screen:none;
 android telefon 8 gb ram 256 gb hafıza -> price:any; brand:none; os:android; usage:none; ram:8; storage:256; battery:none; camera:none; screen:none;
-bütçe 10000 tl altı android telefon -> price:10000; brand:none; os:android; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 10000 tl android telefon -> price:10000; brand:none; os:android; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 50000 tl android telefon -> price:50000; brand:none; os:android; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 50000 tl android telefon oyun için -> price:50000; brand:none; os:android; usage:game; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 50000 tl android telefon fotoğraf için -> price:50000; brand:none; os:android; usage:photo; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 50000 tl samsung telefon fotoğraf için -> price:50000; brand:samsung; os:android; usage:photo; ram:none; storage:none; battery:none; camera:none; screen:none;
+bütçe 50000 tl iphone telefon -> price:50000; brand:apple; os:ios; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
 oyun için uygun fiyatlı android telefon -> price:any; brand:none; os:android; usage:game; ram:none; storage:none; battery:none; camera:none; screen:none;
 profesyonel fotoğraf çekmek için iphone -> price:any; brand:apple; os:ios; usage:photo; ram:none; storage:none; battery:none; camera:good; screen:none;
 şarjı iyi giden samsung telefon -> price:any; brand:samsung; os:android; usage:none; ram:none; storage:none; battery:good; camera:none; screen:none;
@@ -334,6 +346,7 @@ samsung oyun için bataryası ve depolaması iyi -> price:any; brand:samsung; os
 20000 tl altında android gaming telefon -> price:20000; brand:none; os:android; usage:game; ram:none; storage:none; battery:none; camera:none; screen:none;
 fotoğraf ve oyun için iphone -> price:any; brand:apple; os:ios; usage:game; ram:none; storage:none; battery:none; camera:good; screen:none;
 xiaomi bataryası iyi ve ekranı iyi -> price:any; brand:xiaomi; os:android; usage:none; ram:none; storage:none; battery:good; camera:none; screen:good;
+xiaomi bataryası iyi ve ekranı iyi oyun için -> price:any; brand:xiaomi; os:android; usage:game; ram:none; storage:none; battery:good; camera:none; screen:good;
 15000 tl'ye iyi ekranlı android -> price:15000; brand:none; os:android; usage:none; ram:none; storage:none; battery:none; camera:none; screen:good;
 gaming telefon 256 gb hafıza ve iyi batarya -> price:any; brand:none; os:none; usage:game; ram:none; storage:256; battery:good; camera:none; screen:none;
 apple 16 gb ram -> price:any; brand:apple; os:ios; usage:none; ram:16; storage:none; battery:none; camera:none; screen:none;
