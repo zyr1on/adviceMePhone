@@ -1,4 +1,5 @@
-samsung bataryası iyi olan -> price:any; brand:samsung; os:android; usage:none; ram:none; storage:none; battery:good; camera:none; screen:none; 
+samsung bataryası iyi olan -> price:any; brand:samsung; os:android; usage:none; ram:none; storage:none; battery:good; camera:none; screen:none;
+fotograf icin 256 gb hafiza -> price:any; brand:none; os:none; usage:photo; ram:none; storage:256; battery:good; camera:none; screen:none;
 telefon öner -> price:any; brand:none; os:none; usage:none; ram:none; storage:none; battery:none; camera:none; screen:none;
 oyun için telefon -> price:any; brand:none; os:none; usage:game; ram:none; storage:none; battery:none; camera:none; screen:none;
 iyi kameralı telefon -> price:any; brand:none; os:none; usage:photo; ram:none; storage:none; battery:none; camera:good; screen:none;
