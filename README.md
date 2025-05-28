@@ -1,0 +1,1 @@
+model sonucu ve veri setimizi birleştirerek bir filtreleme işlemi gerçekleştiren kodların yer aldığı branch. kullanıcının girdiği propmptlar sonucu modelin verdiği cevabı kullanarak veri setine gerekli filtrelemeyi yapar ve uygun akıllı telefonları önerir. Terminalde çalışan bu proje fornt end ile bağlanacaktır.
