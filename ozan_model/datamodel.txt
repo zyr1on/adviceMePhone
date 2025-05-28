@@ -1,0 +1,112 @@
+Amaç:
+Aşağıdaki kurallara uygun olarak, data.txt biçiminde kullanılacak etiketli cümle verileri üret.
+ 1. Format:
+Her satır şu şekilde olmalı:
+[cümle] => [etiket1, etiket2, etiket3, ...]
+
+Cümle Kuralları:
+Türkçe yazılmalı
+
+Doğal, gündelik kullanıcı dili kullanılmalı
+
+Her cümle kısa (en fazla 1–2 satır) ve açık olmalı
+
+Aynı anlam farklı kelimelerle tekrar edilmeli (varyasyon)
+
+ 3. Etiket Kuralları:
+Etiketler aşağıdaki listedeki değerlerden olmalı
+
+Boşluk yok, küçük harf, virgülle ayrılmış
+
+Her cümle 1 ila 4 etikete sahip olmalı
+
+Tüm etiket grupları dengeli dağılmalı (homojenlik)
+
+ 4. Etiket Listesi (TAM ve Değişmez)
+battery:
+battery:good
+
+battery:bad
+
+brand:
+brand:samsung
+
+brand:apple
+
+brand:xiaomi
+
+brand:huawei
+
+brand:oppo
+
+brand:realme
+
+os:
+os:ios
+
+os:android
+
+price:
+price:x<=10000
+
+price:10000<x<=20000
+
+price:x>20000
+
+ram:
+ram:4
+
+ram:6
+
+ram:8
+
+ram:12
+
+usage:
+usage:game
+
+usage:camera
+
+usage:daily
+
+usage:socialmedia
+
+camera:
+camera:good
+
+camera:bad
+
+
+5. Yapılmaması Gerekenler:
+❌ Etiketleri eksik yazma (kamerası güzel var ama camera:good yok)
+
+❌ Etiket dışında başka şey yazma (kamera güzel, iyi telefon gibi etiket olmaz)
+
+❌ Etiketlerde boşluk veya büyük harf kullanma (Camera : Good → yanlış)
+
+❌ Aynı cümleyi kopyalayıp yapıştırarak doldurma
+
+❌ Etiketleri açıklama yaparak verme (etiket kısmı sadece etiket olmalı)
+
+6. Hedef:
+En az 500 satır veri üret
+
+Tüm etiket gruplarından dengeli sayıda örnek olsun
+
+Her etiket en az 20 defa geçsin
+
+Örnekler:
+
+Uygun fiyatlı bir telefon arıyorum. => price:x<=10000  
+Kamerası iyi ve şarjı uzun giden bir model istiyorum. => camera:good, battery:good  
+Günlük sosyal medya için kullanacağım. => usage:daily, usage:socialmedia  
+Xiaomi ya da Realme düşünüyorum. => brand:xiaomi, brand:realme  
+Şarjı kötü olmasın yeter. => battery:good  
+4 GB RAM yeterli, fazla şey yapmıyorum. => ram:4  
+Oyun oynayacağım, batarya da sağlam olsun. => usage:game, battery:good  
+Apple marka telefon istiyorum. => brand:apple  
+Android olmalı, iOS istemem. => os:android  
+
+ Şimdi bu kurallara göre kaliteli, dengeli ve yapay zeka eğitimi için kullanılabilir veri üret.
+
+İstersen bu prompt’u .md ya da .txt olarak da kaydedip saklayabilirsin
