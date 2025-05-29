@@ -1,117 +1,117 @@
 brand,os,storage,ram,Camera,battery,screen,price,usage
-iPhone 16 128GB,ios,none,6,good,none,none,31960.0,camera
-iPhone 16 Plus 128GB,ios,none,6,good,good,good,35960.0,camera
-iPhone 16 Plus 256GB,ios,good,6,good,good,good,37960.0,camera
-iPhone 16 Plus 512GB,ios,good,6,good,good,good,39960.0,camera
-iPhone 16 Pro 128GB,ios,none,6,good,good,none,39960.0,camera
-iPhone 16 Pro 256GB,ios,good,8,good,good,none,41960.0,camera
-iPhone 16 Pro 512GB,ios,good,8,good,good,none,43960.0,camera
-iPhone 16 Pro Max 128GB,ios,none,6,good,good,good,43960.0,camera
-iPhone 16 Pro Max 256GB,ios,good,8,good,good,good,47960.0,camera
-iPhone 16 Pro Max 512GB,ios,good,8,good,good,good,51960.0,cameras
-iPhone 15 128GB,ios,none,6,good,none,none,31960.0,camera
-iPhone 15 256GB,ios,good,6,good,none,none,33960.0,camera
-iPhone 15 512GB,ios,good,6,good,none,none,37960.0,camera
-iPhone 15 Plus 128GB,ios,none,6,good,good,good,35960.0,camera
-iPhone 15 Plus 256GB,ios,good,6,good,good,good,39960.0,camera
-iPhone 15 Plus 512GB,ios,good,6,good,good,good,41960.0,camera
-iPhone 15 Pro 128GB,ios,none,6,good,good,none,43960.0,camera
-iPhone 15 Pro 256GB,ios,good,8,good,good,none,47960.0,camera
-iPhone 15 Pro 512GB,ios,good,8,good,good,none,51960.0,camera
-iPhone 15 Pro Max 128GB,ios,none,6,good,good,good,47960.0,camera
-iPhone 15 Pro Max 256GB,ios,good,8,good,good,good,51960.0,camera
-iPhone 15 Pro Max 512GB,ios,good,8,good,good,good,55960.0,camera
-iPhone 14 128GB,ios,none,6,none,none,none,31960.0,none
-iPhone 14 256GB,ios,good,6,none,none,none,33960.0,none
-iPhone 14 512GB,ios,good,6,none,none,none,37960.0,none
-iPhone 14 Plus 128GB,ios,none,6,none,good,good,35960.0,none
-iPhone 14 Plus 256GB,ios,good,6,none,good,good,39960.0,none
-iPhone 14 Plus 512GB,ios,good,6,none,good,good,41960.0,none
-iPhone 14 Pro 128GB,ios,none,6,good,good,none,43960.0,none
-iPhone 14 Pro 256GB,ios,good,8,good,good,none,47960.0,none
-iPhone 14 Pro 512GB,ios,good,8,good,good,none,51960.0,none
-iPhone 14 Pro Max 128GB,ios,none,6,good,good,good,47960.0,none
-iPhone 14 Pro Max 256GB,ios,good,8,good,good,good,51960.0,none
-iPhone 14 Pro Max 512GB,ios,good,8,good,good,good,55960.0,none
-iPhone 13 mini 128GB,ios,none,4,none,none,none,27960.0,none
-iPhone 13 mini 256GB,ios,good,4,none,none,none,31960.0,none
-iPhone 13 mini 512GB,ios,good,4,none,none,none,35960.0,none
-iPhone 13 128GB,ios,none,4,none,none,none,31960.0,none
-iPhone 13 256GB,ios,good,4,none,none,none,35960.0,none
-iPhone 13 512GB,ios,good,4,none,none,none,39960.0,none
-iPhone 13 Pro 128GB,ios,none,6,good,none,none,39960.0,none
-iPhone 13 Pro 256GB,ios,good,6,good,none,none,43960.0,none
-iPhone 13 Pro 512GB,ios,good,6,good,none,none,47960.0,none
-iPhone 13 Pro Max 128GB,ios,none,6,good,none,good,43960.0,none
-iPhone 13 Pro Max 256GB,ios,good,6,good,none,good,47960.0,none
-iPhone 13 Pro Max 512GB,ios,good,6,good,none,good,55960.0,none
-iPhone 12 mini 64GB,ios,none,4,none,none,none,27960.0,none
-iPhone 12 mini 128GB,ios,none,4,none,none,none,31960.0,none
-iPhone 12 mini 256GB,ios,good,4,none,none,none,35960.0,none
-iPhone 12 64GB,ios,none,4,none,none,none,31960.0,none
-iPhone 12 128GB,ios,none,4,none,none,none,35960.0,none
-iPhone 12 256GB,ios,good,4,none,none,none,39960.0,none
-iPhone 12 Pro 128GB,ios,none,6,none,none,none,39960.0,none
-iPhone 12 Pro 256GB,ios,good,6,none,none,none,43960.0,none
-iPhone 12 Pro 512GB,ios,good,6,none,none,none,47960.0,none
-iPhone 12 Pro Max 128GB,ios,none,6,none,none,good,43960.0,none
-iPhone 12 Pro Max 256GB,ios,good,6,none,none,good,47960.0,none
-iPhone 12 Pro Max 512GB,ios,good,6,none,none,good,55960.0,none
-iPhone 11 64GB,ios,none,4,none,none,none,27960.0,none
-iPhone 11 128GB,ios,none,4,none,none,none,31960.0,none
-iPhone 11 256GB,ios,good,4,none,none,none,35960.0,none
-iPhone 11 Pro 64GB,ios,none,4,none,none,none,39960.0,none
-iPhone 11 Pro 256GB,ios,good,4,none,none,none,43960.0,none
-iPhone 11 Pro 512GB,ios,good,4,none,none,none,47960.0,none
-iPhone 11 Pro Max 64GB,ios,none,4,none,none,good,43960.0,none
-iPhone 11 Pro Max 256GB,ios,good,4,none,none,good,47960.0,none
-iPhone 11 Pro Max 512GB,ios,good,4,none,none,good,55960.0,none
-Galaxy S24 Ultra 128GB,android,none,12,good,good,good,47960.0,camera
-Galaxy S24 Ultra 256GB,android,good,12,good,good,good,51960.0,camera
-Galaxy S24+ 128GB,android,none,8,good,good,good,35960.0,camera
-Galaxy S24+ 256GB,android,good,8,good,good,good,39960.0,camera
-Galaxy S24 128GB,android,none,8,good,good,none,31960.0,camera
-Galaxy S24 256GB,android,good,8,good,good,none,35960.0,camera
-Galaxy S23 Ultra 128GB,android,none,12,good,good,good,47960.0,camera
-Galaxy S23 Ultra 256GB,android,good,12,good,good,good,51960.0,camera
-Galaxy S23+ 128GB,android,none,8,good,good,good,35960.0,camera
-Galaxy S23+ 256GB,android,good,8,good,good,good,39960.0,camera
-Galaxy S23 128GB,android,none,8,good,none,none,31960.0,camera
-Galaxy S23 256GB,android,good,8,good,none,none,35960.0,camera
-Galaxy S22 Ultra 128GB,android,none,12,noneP,good,good,43960.0,none
-Galaxy S22 Ultra 256GB,android,good,12,noneP,good,good,47960.0,none
-Galaxy S22+ 128GB,android,none,8,none,good,good,31960.0,none
-Galaxy S22+ 256GB,android,good,8,none,good,good,35960.0,none
-Galaxy S22 128GB,android,none,8,none,none,none,27960.0,none
-Galaxy S22 256GB,android,good,8,none,none,none,31960.0,none
-Galaxy Note 20 Ultra 128GB,android,none,12,good,good,good,51960.0,none
-Galaxy Note 20 Ultra 256GB,android,good,12,good,good,good,55960.0,none
-Galaxy Note 20 128GB,android,none,8,good,good,good,39960.0,none
-Galaxy Note 20 256GB,android,good,8,good,good,good,43960.0,none
-Xiaomi 15 Pro 256GB,android,good,12,good,good,good,31960.0,game
-Xiaomi 15 Pro 512GB,android,good,16,good,good,good,35960.0,game
-Xiaomi 15 Pro 1TB,16GB,android,16,good,good,39960.0,,game
-Xiaomi 15 256GB,android,good,12,good,good,good,27960.0,game
-Xiaomi 15 512GB,android,good,16,good,good,good,31960.0,game
-Xiaomi 14T Pro 256GB,android,good,12,good,good,good,25399.6,
-Xiaomi 14T Pro 512GB,android,good,12,good,good,good,31630.8,game
-Xiaomi 14T Pro 1TB,12GB,android,good,good,good,35960.0,,game
-Xiaomi 14T 256GB,android,good,12,good,good,good,23960.0,game
-Xiaomi 14T 512GB,android,good,12,good,good,good,27960.0,game
-Xiaomi 14 Pro 256GB,android,good,12,good,good,good,31960.0,game
-Xiaomi 14 Pro 512GB,android,good,12,good,good,good,35960.0,game
-Xiaomi 14 256GB,android,good,12,good,good,good,27960.0,game
-Xiaomi 14 512GB,android,good,12,good,good,good,31960.0,game
-Redmi Note 14 Pro+ 5G 128GB,android,none,8,good,good,good,14996.0,none
-Redmi Note 14 Pro+ 5G 256GB,android,good,12,good,good,good,15960.0,game
-Redmi Note 14 Pro+ 5G 512GB,android,good,16,good,good,good,17160.0,game
-Redmi Note 14 Pro 5G 128GB,android,none,8,good,good,good,13960.0,none
-Redmi Note 14 Pro 5G 256GB,android,good,12,good,good,good,15160.0,game
-Redmi Note 14 Pro 4G 128GB,android,none,6,good,good,good,11960.0,game
-Redmi Note 14 Pro 4G 256GB,android,good,8,good,good,good,13160.0,none
-Redmi Note 14 5G 128GB,android,none,6,none,good,good,11160.0,none
-Redmi Note 14 5G 256GB,android,good,8,none,good,good,12360.0,none
-Redmi Note 14 4G 128GB,android,none,4,none,good,good,9960.0,none
-Redmi Note 14 4G 256GB,android,good,6,none,good,good,11160.0,none
-Redmi 14C 5G 64GB,android,none,4,none,good,good,7960.0,none
-Redmi 14C 5G 128GB,android,none,6,none,good,good,9160.0,none
+iPhone 16 128GB,ios,none,6,good,none,none,31960.0,camera,https://www.hepsiburada.com/iphone-16-128gb-siyah-p-HBCV00006Y4HFJ?magaza=Hepsiburada&utm_source=google&utm_medium=cpc&utm_campaign=sc:hb-ecom.sr:google.md:text.op:purchase.cid:14876433751&utm_content=agid:167576157483&wt_gl=cpc.text.camp14876433751adgr167576157483&gad_source=1&gad_campaignid=14876433751&gbraid=0AAAAADOiRobB7WgVR_3xMkJ2ZX_iyGRLS&gclid=CjwKCAjwi-DBBhA5EiwAXOHsGav5HQ7S4BMLqOdRaUETDYgkObl6eng6zeHDydtCnFM7KN20SeJqjxoCcGcQAvD_BwE
+iPhone 16 Plus 128GB,ios,none,6,good,good,good,35960.0,camera,https://www.hepsiburada.com/iphone-16-plus-128gb-siyah-p-HBCV00006Y4HG5?magaza=Hepsiburada&utm_source=google&utm_medium=cpc&utm_campaign=sc:hb-ecom.sr:google.md:text.op:purchase.cid:14876433751&utm_content=agid:167966571516&wt_gl=cpc.text.camp14876433751adgr167966571516&gad_source=1&gad_campaignid=14876433751&gbraid=0AAAAADOiRobB7WgVR_3xMkJ2ZX_iyGRLS&gclid=CjwKCAjwi-DBBhA5EiwAXOHsGbhWUGh0-hzuVOIc3hoXlzpbOx9HWEpq2sVXejxL6tEdpJrv0TwdqxoCxboQAvD_BwE
+iPhone 16 Plus 256GB,ios,good,6,good,good,good,37960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-16-plus-256gb-akilli-telefon-siyah-mxwn3tua-1239606.html?utm_content=nonbrand&utm_source=google&utm_medium=cpc&utm_campaign=rt_search_generic_nsp_na_dsa-other-trafik2-feed&gclsrc=aw.ds&gad_source=1&gad_campaignid=19597444980&gbraid=0AAAAADpRgaoa6oiG6-R3KMpf9jXIsnCOT&gclid=CjwKCAjwi-DBBhA5EiwAXOHsGd8qRGA2W7IZ1geqIjOKPtcvyVR1824YlcH4lbzaTpxfMf-EmBpv3hoCsQUQAvD_BwE
+iPhone 16 Plus 512GB,ios,good,6,good,good,good,39960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-16-plus-512gb-akilli-telefon-siyah-my1p3tua-1239551.html
+iPhone 16 Pro 128GB,ios,none,6,good,good,none,39960.0,camera,https://www.amazon.com.tr/Apple-iPhone-16-Pro-256/dp/B0DGJQXCTP/ref=sr_1_1_sspa?adgrpid=162979174724&dib=eyJ2IjoiMSJ9.ULRcXUpHU0hWbTIUbMzdMLwY2aqCxO_9LVEssSR65bd9UnXab3WDln23yWLCR9kAYpcMIeWC5c3hFZIAb9dqUQhmLVN2lssbI_b650kUS_pl8C2eURTVvcAImrPx4gvgtL-G4_oRq4RDB3vBslg5msbycYXbF78M6gSNj-vqhqmLFaK0M-L6uRf_hYVPV0mTH7yvCuarC3D2S5ZSsUm_IzKccEshiQLzPrKDGwLSMq-IoFs12ZYYtPovV9vrUBejhxP3RHgRdNQqrp9HCv2Gw_GKvn62nalin_iMtNEjf1Y.d7QshdKVjoIdEQbKEUfJ5H9917AV49EuDMj_GjgoZG4&dib_tag=se&hvadid=735444692116&hvdev=c&hvlocphy=1012769&hvnetw=g&hvqmt=e&hvrand=6199371900771833486&hvtargid=kwd-845053439244&hydadcr=12165_2504846&keywords=iphone%2B16%2Bpro&mcid=ca600a953c6e3ae2833c8e544091ae71&qid=1748536357&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+iPhone 16 Pro 256GB,ios,good,8,good,good,none,41960.0,camera,https://www.amazon.com.tr/Apple-iPhone-16-Pro-256/dp/B0DGJJJ8YH/ref=sr_1_1_sspa?adgrpid=162979174724&dib=eyJ2IjoiMSJ9.ULRcXUpHU0hWbTIUbMzdMLwY2aqCxO_9LVEssSR65bd9UnXab3WDln23yWLCR9kAYpcMIeWC5c3hFZIAb9dqUQhmLVN2lssbI_b650kUS_pl8C2eURTVvcAImrPx4gvgtL-G4_oRq4RDB3vBslg5msbycYXbF78M6gSNj-vqhqmLFaK0M-L6uRf_hYVPV0mTH7yvCuarC3D2S5ZSsUm_IzKccEshiQLzPrKDGwLSMq-IoFs12ZYYtPovV9vrUBejhxP3RHgRdNQqrp9HCv2Gw_GKvn62nalin_iMtNEjf1Y.d7QshdKVjoIdEQbKEUfJ5H9917AV49EuDMj_GjgoZG4&dib_tag=se&hvadid=735444692116&hvdev=c&hvlocphy=1012769&hvnetw=g&hvqmt=e&hvrand=6199371900771833486&hvtargid=kwd-845053439244&hydadcr=12165_2504846&keywords=iphone%2B16%2Bpro&mcid=ca600a953c6e3ae2833c8e544091ae71&qid=1748536357&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+iPhone 16 Pro 512GB,ios,good,8,good,good,none,43960.0,camera,https://www.amazon.com.tr/Apple-iPhone-16-Pro-256/dp/B0DGJJJ8YH/ref=sr_1_1_sspa?adgrpid=162979174724&dib=eyJ2IjoiMSJ9.ULRcXUpHU0hWbTIUbMzdMLwY2aqCxO_9LVEssSR65bd9UnXab3WDln23yWLCR9kAYpcMIeWC5c3hFZIAb9dqUQhmLVN2lssbI_b650kUS_pl8C2eURTVvcAImrPx4gvgtL-G4_oRq4RDB3vBslg5msbycYXbF78M6gSNj-vqhqmLFaK0M-L6uRf_hYVPV0mTH7yvCuarC3D2S5ZSsUm_IzKccEshiQLzPrKDGwLSMq-IoFs12ZYYtPovV9vrUBejhxP3RHgRdNQqrp9HCv2Gw_GKvn62nalin_iMtNEjf1Y.d7QshdKVjoIdEQbKEUfJ5H9917AV49EuDMj_GjgoZG4&dib_tag=se&hvadid=735444692116&hvdev=c&hvlocphy=1012769&hvnetw=g&hvqmt=e&hvrand=6199371900771833486&hvtargid=kwd-845053439244&hydadcr=12165_2504846&keywords=iphone%2B16%2Bpro&mcid=ca600a953c6e3ae2833c8e544091ae71&qid=1748536357&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+iPhone 16 Pro Max 128GB,ios,none,6,good,good,good,43960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-16-pro-max-256gb-akilli-telefon-natural-titanium-mywy3tua-1239592.html
+iPhone 16 Pro Max 256GB,ios,good,8,good,good,good,47960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-16-pro-max-256gb-akilli-telefon-natural-titanium-mywy3tua-1239592.html
+iPhone 16 Pro Max 512GB,ios,good,8,good,good,good,51960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-16-pro-max-256gb-akilli-telefon-natural-titanium-mywy3tua-1239592.html
+iPhone 15 128GB,ios,none,6,good,none,none,31960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-128-gb-akilli-telefon-siyah-mtp03tua-1232435.html
+iPhone 15 256GB,ios,good,6,good,none,none,33960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-128-gb-akilli-telefon-siyah-mtp03tua-1232435.html
+iPhone 15 512GB,ios,good,6,good,none,none,37960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-128-gb-akilli-telefon-siyah-mtp03tua-1232435.html
+iPhone 15 Plus 128GB,ios,none,6,good,good,good,35960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-plus-128-gb-akilli-telefon-mavi-mu163tua-1232446.html
+iPhone 15 Plus 256GB,ios,good,6,good,good,good,39960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-plus-256-gb-akilli-telefon-mavi-mu1f3tua-1232451.html
+iPhone 15 Plus 512GB,ios,good,6,good,good,good,41960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-plus-512-gb-akilli-telefon-mavi-mu1p3tua-1232465.html
+iPhone 15 Pro 128GB,ios,none,6,good,good,none,43960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-pro-128-gb-akilli-telefon-mavi-titanium-mtv03tua-1232461.html
+iPhone 15 Pro 256GB,ios,good,8,good,good,none,47960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-pro-256-gb-akilli-telefon-mavi-titanium-mtv63tua-1232469.html
+iPhone 15 Pro 512GB,ios,good,8,good,good,none,51960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-pro-512-gb-akilli-telefon-mavi-titanium-mtva3tua-1232473.html
+iPhone 15 Pro Max 128GB,ios,none,6,good,good,good,47960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-pro-max-256-gb-akilli-telefon-siyah-titanium-mu773tua-1232476.html
+iPhone 15 Pro Max 256GB,ios,good,8,good,good,good,51960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-pro-max-256-gb-akilli-telefon-siyah-titanium-mu773tua-1232476.html
+iPhone 15 Pro Max 512GB,ios,good,8,good,good,good,55960.0,camera,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-15-pro-max-512-gb-akilli-telefon-siyah-titanium-mu7c3tua-1232484.html
+iPhone 14 128GB,ios,none,6,none,none,none,31960.0,none,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-14-128gb-akilli-telefon-starlight-mpur3tua-1223357.html
+iPhone 14 256GB,ios,good,6,none,none,none,33960.0,none,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-14-256gb-akilli-telefon-starlight-mpw43tua-1223362.html
+iPhone 14 512GB,ios,good,6,none,none,none,37960.0,none,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-14-512gb-akilli-telefon-starlight-mpx33tua-1223367.html
+iPhone 14 Plus 128GB,ios,none,6,none,good,good,35960.0,none,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-14-plus-128gb-akilli-telefon-starlight-mq4y3tua-1223372.html
+iPhone 14 Plus 256GB,ios,good,6,none,good,good,39960.0,none,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-14-plus-256gb-akilli-telefon-starlight-mq553tua-1223377.html
+iPhone 14 Plus 512GB,ios,good,6,none,good,good,41960.0,none,https://www.mediamarkt.com.tr/tr/product/_apple-iphone-14-plus-512gb-akilli-telefon-starlight-mq5d3tua-1223382.html
+iPhone 14 Pro 128GB,ios,none,6,good,good,none,43960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-14-pro.html
+iPhone 14 Pro 256GB,ios,good,8,good,good,none,47960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-14-pro-256gb.html
+iPhone 14 Pro 512GB,ios,good,8,good,good,none,51960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-14-pro-512gb.html
+iPhone 14 Pro Max 128GB,ios,none,6,good,good,good,47960.0,none,https://www.mediamarkt.com.tr/tr/product/_apple-g2-iphone-14-pro-max-128gb-akilli-telefon-siyah-1234019.html
+iPhone 14 Pro Max 256GB,ios,good,8,good,good,good,51960.0,none,https://www.teknosa.com/apple-iphone-14-pro-max-256gb-altin-cep-telefonu-mq9w3tua-p-125078780
+iPhone 14 Pro Max 512GB,ios,good,8,good,good,good,55960.0,none,https://www.teknosa.com/apple-iphone-14-pro-max-256gb-altin-cep-telefonu-mq9w3tua-p-125078780
+iPhone 13 mini 128GB,ios,none,4,none,none,none,27960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-13-mini.html
+iPhone 13 mini 256GB,ios,good,4,none,none,none,31960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-13-mini-256gb.html
+iPhone 13 mini 512GB,ios,good,4,none,none,none,35960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-13-mini-512gb.html
+iPhone 13 128GB,ios,none,4,none,none,none,31960.0,none,https://www.amazon.com.tr/gp/aw/d/B09G9RBDBZ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=8e00b11b30adb070842635555e1aa3ec&hsa_cr_id=9387047820002&qid=1748537481&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=ZbOqS&content-id=amzn1.sym.1582b886-6aab-4523-8fab-5562a2526d02%3Aamzn1.sym.1582b886-6aab-4523-8fab-5562a2526d02&pf_rd_p=1582b886-6aab-4523-8fab-5562a2526d02&pf_rd_r=KQ7MPSTRSE3N7C2SH671&pd_rd_wg=nCXcj&pd_rd_r=87bd807e-6f07-4278-9f16-89b3aeb4ea00&th=1
+iPhone 13 256GB,ios,good,4,none,none,none,35960.0,none,https://www.vatanbilgisayar.com/iphone-13-akilli-telefon.html
+iPhone 13 512GB,ios,good,4,none,none,none,39960.0,none,https://www.vatanbilgisayar.com/iphone-13-akilli-telefon.html
+iPhone 13 Pro 128GB,ios,none,6,good,none,none,39960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-13-pro.html
+iPhone 13 Pro 256GB,ios,good,6,good,none,none,43960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-13-pro.html
+iPhone 13 Pro 512GB,ios,good,6,good,none,none,47960.0,none,https://www.epey.com/akilli-telefonlar/apple-iphone-13-pro.html
+iPhone 13 Pro Max 128GB,ios,none,6,good,none,good,43960.0,none,https://www.vatanbilgisayar.com/iphone-13-pro-max-128-gb-akilli-telefon-altin.html
+iPhone 13 Pro Max 256GB,ios,good,6,good,none,good,47960.0,none,https://www.vatanbilgisayar.com/iphone-13-pro-max-256-gb-akilli-telefon-altin.html
+iPhone 13 Pro Max 512GB,ios,good,6,good,none,good,55960.0,none,https://www.vatanbilgisayar.com/iphone-13-pro-max-512-gb-akilli-telefon-altin.html
+iPhone 12 mini 64GB,ios,none,4,none,none,none,27960.0,none,https://www.teknosa.com/yenilenmis-iphone-12-mini-64-gb-siyah-cep-telefonu-1-yil-garantili-b-kalite-p-790180597
+iPhone 12 mini 128GB,ios,none,4,none,none,none,31960.0,none,https://www.teknosa.com/yenilenmis-iphone-12-mini-64-gb-siyah-cep-telefonu-1-yil-garantili-b-kalite-p-790180597
+iPhone 12 mini 256GB,ios,good,4,none,none,none,35960.0,none,https://www.teknosa.com/yenilenmis-iphone-12-mini-64-gb-siyah-cep-telefonu-1-yil-garantili-b-kalite-p-790180597
+iPhone 12 64GB,ios,none,4,none,none,none,31960.0,none,https://www.amazon.com.tr/gp/aw/d/B08NVP5B1T/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=e4e1bcc4fe67c84662757b5328dc4b09&hsa_cr_id=8510746730702&qid=1748537724&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=rEnzq&content-id=amzn1.sym.1582b886-6aab-4523-8fab-5562a2526d02%3Aamzn1.sym.1582b886-6aab-4523-8fab-5562a2526d02&pf_rd_p=1582b886-6aab-4523-8fab-5562a2526d02&pf_rd_r=1BA3DPYJ716HJTR8P664&pd_rd_wg=IYnU5&pd_rd_r=65aad6c1-1a4b-4c4f-b93e-87fdd58094c4&th=1
+iPhone 12 128GB,ios,none,4,none,none,none,35960.0,none,https://www.amazon.com.tr/gp/aw/d/B08NVTT7ZV/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=e4e1bcc4fe67c84662757b5328dc4b09&hsa_cr_id=8510746730702&qid=1748537724&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=rEnzq&content-id=amzn1.sym.1582b886-6aab-4523-8fab-5562a2526d02%3Aamzn1.sym.1582b886-6aab-4523-8fab-5562a2526d02&pf_rd_p=1582b886-6aab-4523-8fab-5562a2526d02&pf_rd_r=1BA3DPYJ716HJTR8P664&pd_rd_wg=IYnU5&pd_rd_r=65aad6c1-1a4b-4c4f-b93e-87fdd58094c4&th=1
+iPhone 12 256GB,ios,good,4,none,none,none,39960.0,none,https://www.amazon.com.tr/gp/aw/d/B08NVS65WH/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=e4e1bcc4fe67c84662757b5328dc4b09&hsa_cr_id=8510746730702&qid=1748537724&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=rEnzq&content-id=amzn1.sym.1582b886-6aab-4523-8fab-5562a2526d02%3Aamzn1.sym.1582b886-6aab-4523-8fab-5562a2526d02&pf_rd_p=1582b886-6aab-4523-8fab-5562a2526d02&pf_rd_r=1BA3DPYJ716HJTR8P664&pd_rd_wg=IYnU5&pd_rd_r=65aad6c1-1a4b-4c4f-b93e-87fdd58094c4&th=1
+iPhone 12 Pro 128GB,ios,none,6,none,none,none,39960.0,none,https://www.mediamarkt.com.tr/tr/product/_yenilenmis-g1-iphone-12-pro-128-gb-akilli-telefon-gold-1227753.html
+iPhone 12 Pro 256GB,ios,good,6,none,none,none,43960.0,none,https://www.mediamarkt.com.tr/tr/product/_yenilenmis-g1-iphone-12-pro-128-gb-akilli-telefon-gold-1227753.html
+iPhone 12 Pro 512GB,ios,good,6,none,none,none,47960.0,none,https://www.mediamarkt.com.tr/tr/product/_yenilenmis-g1-iphone-12-pro-128-gb-akilli-telefon-gold-1227753.html
+iPhone 12 Pro Max 128GB,ios,none,6,none,none,good,43960.0,none,https://www.trendyol.com/apple/yenilenmis-iphone-12-pro-max-128-gb-pasifik-mavi-cep-telefonu-12-ay-garantili-b-kalite-p-650690228
+iPhone 12 Pro Max 256GB,ios,good,6,none,none,good,47960.0,none,https://www.trendyol.com/apple/yenilenmis-iphone-12-pro-max-256-gb-pasifik-mavisi-cep-telefonu-12-ay-garantili-b-kalite-p-689224831
+iPhone 12 Pro Max 512GB,ios,good,6,none,none,good,55960.0,none,https://www.trendyol.com/pd/apple/yenilenmis-iphone-12-pro-max-512-gb-pasifik-mavisi-cep-telefonu-12-ay-garantili-b-kalite-p-689222709
+iPhone 11 64GB,ios,none,4,none,none,none,27960.0,none,https://www.mediamarkt.com.tr/tr/product/_yenilenmis-g1-iphone-11-64gb-akilli-telefon-beyaz-1227412.html
+iPhone 11 128GB,ios,none,4,none,none,none,31960.0,none,https://www.mediamarkt.com.tr/tr/product/_yenilenmis-g1-iphone-11-64gb-akilli-telefon-beyaz-1227412.html
+iPhone 11 256GB,ios,good,4,none,none,none,35960.0,none,https://www.mediamarkt.com.tr/tr/product/_yenilenmis-g1-iphone-11-64gb-akilli-telefon-beyaz-1227412.html
+iPhone 11 Pro 64GB,ios,none,4,none,none,none,39960.0,none,https://www.akakce.com/cep-telefonu/en-ucuz-iphone-11-pro-64-gb-fiyati,510432283.html
+iPhone 11 Pro 256GB,ios,good,4,none,none,none,43960.0,none,https://www.akakce.com/cep-telefonu/en-ucuz-iphone-11-pro-256-gb-fiyati,534226234.html
+iPhone 11 Pro 512GB,ios,good,4,none,none,none,47960.0,none,https://www.akakce.com/cep-telefonu/en-ucuz-iphone-11-pro-512-gb-fiyati,534227291.html
+iPhone 11 Pro Max 64GB,ios,none,4,none,none,good,43960.0,none,https://www.teknosa.com/yenilenmis-iphone-11-pro-max-64-gb-uzay-grisi-cep-telefonu-1-yil-garantili-b-kalite-p-790180606
+iPhone 11 Pro Max 256GB,ios,good,4,none,none,good,47960.0,none,https://www.teknosa.com/yenilenmis-iphone-11-pro-max-64-gb-uzay-grisi-cep-telefonu-1-yil-garantili-b-kalite-p-790180606
+iPhone 11 Pro Max 512GB,ios,good,4,none,none,good,55960.0,none,https://www.teknosa.com/yenilenmis-iphone-11-pro-max-64-gb-uzay-grisi-cep-telefonu-1-yil-garantili-b-kalite-p-790180606
+Galaxy S24 Ultra 128GB,android,none,12,good,good,good,47960.0,camera,https://www.mediamarkt.com.tr/tr/product/_samsung-galaxy-s24-ultra-12256gb-akilli-telefon-titanyum-siyah-1235312.html
+Galaxy S24 Ultra 256GB,android,good,12,good,good,good,51960.0,camera,https://www.mediamarkt.com.tr/tr/product/_samsung-galaxy-s24-ultra-12256gb-akilli-telefon-titanyum-siyah-1235312.html
+Galaxy S24+ 128GB,android,none,8,good,good,good,35960.0,camera,https://www.epey.com/akilli-telefonlar/samsung-galaxy-s24-plus.html
+Galaxy S24+ 256GB,android,good,8,good,good,good,39960.0,camera,https://www.epey.com/akilli-telefonlar/samsung-galaxy-s24-plus.html
+Galaxy S24 128GB,android,none,8,good,good,none,31960.0,camera,https://www.mediamarkt.com.tr/tr/product/_samsung-galaxy-s24-8256gb-akilli-telefon-siyah-1235285.html
+Galaxy S24 256GB,android,good,8,good,good,none,35960.0,camera,https://www.mediamarkt.com.tr/tr/product/_samsung-galaxy-s24-8256gb-akilli-telefon-siyah-1235285.html
+Galaxy S23 Ultra 128GB,android,none,12,good,good,good,47960.0,camera,https://www.vatanbilgisayar.com/samsung-s23-ultra-akilli-telefon.html
+Galaxy S23 Ultra 256GB,android,good,12,good,good,good,51960.0,camera,https://www.vatanbilgisayar.com/samsung-s23-ultra-akilli-telefon.html
+Galaxy S23+ 128GB,android,none,8,good,good,good,35960.0,camera,https://www.mediamarkt.com.tr/tr/product/_samsung-yenilenmis-g2-galaxy-s23-plus-256-gb-akilli-telefon-yesil-1246080.html
+Galaxy S23+ 256GB,android,good,8,good,good,good,39960.0,camera,https://www.mediamarkt.com.tr/tr/product/_samsung-yenilenmis-g2-galaxy-s23-plus-256-gb-akilli-telefon-yesil-1246080.html
+Galaxy S23 128GB,android,none,8,good,none,none,31960.0,camera,https://www.vatanbilgisayar.com/samsung-s23-akilli-telefon.html
+Galaxy S23 256GB,android,good,8,good,none,none,35960.0,camera,https://www.vatanbilgisayar.com/samsung-s23-akilli-telefon.html
+Galaxy S22 Ultra 128GB,android,none,12,noneP,good,good,43960.0,none,https://www.vatanbilgisayar.com/samsung-galaxy-s22-ultra.html
+Galaxy S22 Ultra 256GB,android,good,12,noneP,good,good,47960.0,none,https://www.vatanbilgisayar.com/samsung-galaxy-s22-ultra.html
+Galaxy S22+ 128GB,android,none,8,none,good,good,31960.0,none,https://www.vatanbilgisayar.com/samsung-galaxy-s22-plus-akilli-telefon.html
+Galaxy S22+ 256GB,android,good,8,none,good,good,35960.0,none,https://www.vatanbilgisayar.com/samsung-galaxy-s22-plus-akilli-telefon.html
+Galaxy S22 128GB,android,none,8,none,none,none,27960.0,none,https://www.vatanbilgisayar.com/samsung-galaxy-s22-128-gb-akilli-telefon-green.html
+Galaxy S22 256GB,android,good,8,none,none,none,31960.0,none,https://www.vatanbilgisayar.com/samsung-galaxy-s22-128-gb-akilli-telefon-green.html
+Galaxy Note 20 Ultra 128GB,android,none,12,good,good,good,51960.0,none,https://www.vatanbilgisayar.com/samsung-note-20-ultra-256-gb-akilli-telefon-mistik-siyah.html
+Galaxy Note 20 Ultra 256GB,android,good,12,good,good,good,55960.0,none,https://www.vatanbilgisayar.com/samsung-note-20-ultra-256-gb-akilli-telefon-mistik-siyah.html
+Galaxy Note 20 128GB,android,none,8,good,good,good,39960.0,none,https://www.vatanbilgisayar.com/samsung-galaxy-note-20-akilli-telefon-mistik-gri.html
+Galaxy Note 20 256GB,android,good,8,good,good,good,43960.0,none,https://www.vatanbilgisayar.com/samsung-galaxy-note-20-akilli-telefon-mistik-gri.html
+Xiaomi 15 Pro 256GB,android,good,12,good,good,good,31960.0,game,https://www.mi.com/tr/product/xiaomi-15/
+Xiaomi 15 Pro 512GB,android,good,16,good,good,good,35960.0,game,https://www.mi.com/tr/product/xiaomi-15/
+Xiaomi 15 Pro 1TB,16GB,android,16,good,good,39960.0,game,https://www.mi.com/tr/product/xiaomi-15/
+Xiaomi 15 256GB,android,good,12,good,good,good,27960.0,game,https://www.hepsiburada.com/xiaomi-15-12gb-ram-256gb-rom-beyaz-p-HBCV000084H2MD
+Xiaomi 15 512GB,android,good,16,good,good,good,31960.0,game,https://www.hepsiburada.com/xiaomi-15-12gb-ram-512gb-rom-yesil-pm-HBC000084H1CZ
+Xiaomi 14T Pro 256GB,android,good,12,good,good,good,25399.6,game,https://www.vatanbilgisayar.com/xiaomi-14-t-pro-akilli-telefon.html
+Xiaomi 14T Pro 512GB,android,good,12,good,good,good,31630.8,game,https://www.vatanbilgisayar.com/xiaomi-14-t-pro-akilli-telefon.html
+Xiaomi 14T Pro 1TB,12GB,android,good,good,good,35960.0,game,https://www.vatanbilgisayar.com/xiaomi-14-t-pro-akilli-telefon.html
+Xiaomi 14T 256GB,android,good,12,good,good,good,23960.0,game,https://www.teknosa.com/xiaomi-14t-12256-gb-mavi-akilli-telefon-p-125079779
+Xiaomi 14T 512GB,android,good,12,good,good,good,27960.0,game,https://www.vatanbilgisayar.com/xiaomi-14-t-pro-akilli-telefon.html
+Xiaomi 14 Pro 256GB,android,good,12,good,good,good,31960.0,game,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-pro.html
+Xiaomi 14 Pro 512GB,android,good,12,good,good,good,35960.0,game,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-pro-12-512-gb-siyah-akilli-telefon.html
+Xiaomi 14 256GB,android,good,12,good,good,good,27960.0,game,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-8-128-gb-siyah-akilli-telefon.html
+Xiaomi 14 512GB,android,good,12,good,good,good,31960.0,game,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14.html
+Redmi Note 14 Pro+ 5G 128GB,android,none,8,good,good,good,14996.0,none,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-pro-plus-5g.html
+Redmi Note 14 Pro+ 5G 256GB,android,good,12,good,good,good,15960.0,game,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-pro-plus-5g.html
+Redmi Note 14 Pro+ 5G 512GB,android,good,16,good,good,good,17160.0,game,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-pro-plus-5g.html
+Redmi Note 14 Pro 5G 128GB,android,none,8,good,good,good,13960.0,none,https://www.epey.com/akilli-telefonlar/redmi-note-14-pro-5g.html
+Redmi Note 14 Pro 5G 256GB,android,good,12,good,good,good,15160.0,game,https://www.epey.com/akilli-telefonlar/redmi-note-14-pro-5g.html
+Redmi Note 14 Pro 4G 128GB,android,none,6,good,good,good,11960.0,game,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-pro.html
+Redmi Note 14 Pro 4G 256GB,android,good,8,good,good,good,13160.0,none,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-pro.html
+Redmi Note 14 5G 128GB,android,none,6,none,good,good,11160.0,none,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14-8-128-gb-siyah-akilli-telefon.html
+Redmi Note 14 5G 256GB,android,good,8,none,good,good,12360.0,none,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14.html
+Redmi Note 14 4G 128GB,android,none,4,none,good,good,9960.0,none,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14.html
+Redmi Note 14 4G 256GB,android,good,6,none,good,good,11160.0,none,https://www.vatanbilgisayar.com/xiaomi-redmi-note-14.html
+Redmi 14C 5G 64GB,android,none,4,none,good,good,7960.0,none,https://www.vatanbilgisayar.com/xiaomi-redmi-14c-6-128-gb-akilli-telefon-siyah.html
+Redmi 14C 5G 128GB,android,none,6,none,good,good,9160.0,none,https://www.vatanbilgisayar.com/xiaomi-redmi-14c-akilli-telefon.html
