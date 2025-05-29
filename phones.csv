@@ -1,0 +1,117 @@
+brand,os,storage,ram,Camera,battery,screen,price,usage
+iPhone 16 128GB,ios,none,6,good,none,none,31960.0,camera
+iPhone 16 Plus 128GB,ios,none,6,good,good,good,35960.0,camera
+iPhone 16 Plus 256GB,ios,good,6,good,good,good,37960.0,camera
+iPhone 16 Plus 512GB,ios,good,6,good,good,good,39960.0,camera
+iPhone 16 Pro 128GB,ios,none,6,good,good,none,39960.0,camera
+iPhone 16 Pro 256GB,ios,good,8,good,good,none,41960.0,camera
+iPhone 16 Pro 512GB,ios,good,8,good,good,none,43960.0,camera
+iPhone 16 Pro Max 128GB,ios,none,6,good,good,good,43960.0,camera
+iPhone 16 Pro Max 256GB,ios,good,8,good,good,good,47960.0,camera
+iPhone 16 Pro Max 512GB,ios,good,8,good,good,good,51960.0,cameras
+iPhone 15 128GB,ios,none,6,good,none,none,31960.0,camera
+iPhone 15 256GB,ios,good,6,good,none,none,33960.0,camera
+iPhone 15 512GB,ios,good,6,good,none,none,37960.0,camera
+iPhone 15 Plus 128GB,ios,none,6,good,good,good,35960.0,camera
+iPhone 15 Plus 256GB,ios,good,6,good,good,good,39960.0,camera
+iPhone 15 Plus 512GB,ios,good,6,good,good,good,41960.0,camera
+iPhone 15 Pro 128GB,ios,none,6,good,good,none,43960.0,camera
+iPhone 15 Pro 256GB,ios,good,8,good,good,none,47960.0,camera
+iPhone 15 Pro 512GB,ios,good,8,good,good,none,51960.0,camera
+iPhone 15 Pro Max 128GB,ios,none,6,good,good,good,47960.0,camera
+iPhone 15 Pro Max 256GB,ios,good,8,good,good,good,51960.0,camera
+iPhone 15 Pro Max 512GB,ios,good,8,good,good,good,55960.0,camera
+iPhone 14 128GB,ios,none,6,none,none,none,31960.0,none
+iPhone 14 256GB,ios,good,6,none,none,none,33960.0,none
+iPhone 14 512GB,ios,good,6,none,none,none,37960.0,none
+iPhone 14 Plus 128GB,ios,none,6,none,good,good,35960.0,none
+iPhone 14 Plus 256GB,ios,good,6,none,good,good,39960.0,none
+iPhone 14 Plus 512GB,ios,good,6,none,good,good,41960.0,none
+iPhone 14 Pro 128GB,ios,none,6,good,good,none,43960.0,none
+iPhone 14 Pro 256GB,ios,good,8,good,good,none,47960.0,none
+iPhone 14 Pro 512GB,ios,good,8,good,good,none,51960.0,none
+iPhone 14 Pro Max 128GB,ios,none,6,good,good,good,47960.0,none
+iPhone 14 Pro Max 256GB,ios,good,8,good,good,good,51960.0,none
+iPhone 14 Pro Max 512GB,ios,good,8,good,good,good,55960.0,none
+iPhone 13 mini 128GB,ios,none,4,none,none,none,27960.0,none
+iPhone 13 mini 256GB,ios,good,4,none,none,none,31960.0,none
+iPhone 13 mini 512GB,ios,good,4,none,none,none,35960.0,none
+iPhone 13 128GB,ios,none,4,none,none,none,31960.0,none
+iPhone 13 256GB,ios,good,4,none,none,none,35960.0,none
+iPhone 13 512GB,ios,good,4,none,none,none,39960.0,none
+iPhone 13 Pro 128GB,ios,none,6,good,none,none,39960.0,none
+iPhone 13 Pro 256GB,ios,good,6,good,none,none,43960.0,none
+iPhone 13 Pro 512GB,ios,good,6,good,none,none,47960.0,none
+iPhone 13 Pro Max 128GB,ios,none,6,good,none,good,43960.0,none
+iPhone 13 Pro Max 256GB,ios,good,6,good,none,good,47960.0,none
+iPhone 13 Pro Max 512GB,ios,good,6,good,none,good,55960.0,none
+iPhone 12 mini 64GB,ios,none,4,none,none,none,27960.0,none
+iPhone 12 mini 128GB,ios,none,4,none,none,none,31960.0,none
+iPhone 12 mini 256GB,ios,good,4,none,none,none,35960.0,none
+iPhone 12 64GB,ios,none,4,none,none,none,31960.0,none
+iPhone 12 128GB,ios,none,4,none,none,none,35960.0,none
+iPhone 12 256GB,ios,good,4,none,none,none,39960.0,none
+iPhone 12 Pro 128GB,ios,none,6,none,none,none,39960.0,none
+iPhone 12 Pro 256GB,ios,good,6,none,none,none,43960.0,none
+iPhone 12 Pro 512GB,ios,good,6,none,none,none,47960.0,none
+iPhone 12 Pro Max 128GB,ios,none,6,none,none,good,43960.0,none
+iPhone 12 Pro Max 256GB,ios,good,6,none,none,good,47960.0,none
+iPhone 12 Pro Max 512GB,ios,good,6,none,none,good,55960.0,none
+iPhone 11 64GB,ios,none,4,none,none,none,27960.0,none
+iPhone 11 128GB,ios,none,4,none,none,none,31960.0,none
+iPhone 11 256GB,ios,good,4,none,none,none,35960.0,none
+iPhone 11 Pro 64GB,ios,none,4,none,none,none,39960.0,none
+iPhone 11 Pro 256GB,ios,good,4,none,none,none,43960.0,none
+iPhone 11 Pro 512GB,ios,good,4,none,none,none,47960.0,none
+iPhone 11 Pro Max 64GB,ios,none,4,none,none,good,43960.0,none
+iPhone 11 Pro Max 256GB,ios,good,4,none,none,good,47960.0,none
+iPhone 11 Pro Max 512GB,ios,good,4,none,none,good,55960.0,none
+Galaxy S24 Ultra 128GB,android,none,12,good,good,good,47960.0,camera
+Galaxy S24 Ultra 256GB,android,good,12,good,good,good,51960.0,camera
+Galaxy S24+ 128GB,android,none,8,good,good,good,35960.0,camera
+Galaxy S24+ 256GB,android,good,8,good,good,good,39960.0,camera
+Galaxy S24 128GB,android,none,8,good,good,none,31960.0,camera
+Galaxy S24 256GB,android,good,8,good,good,none,35960.0,camera
+Galaxy S23 Ultra 128GB,android,none,12,good,good,good,47960.0,camera
+Galaxy S23 Ultra 256GB,android,good,12,good,good,good,51960.0,camera
+Galaxy S23+ 128GB,android,none,8,good,good,good,35960.0,camera
+Galaxy S23+ 256GB,android,good,8,good,good,good,39960.0,camera
+Galaxy S23 128GB,android,none,8,good,none,none,31960.0,camera
+Galaxy S23 256GB,android,good,8,good,none,none,35960.0,camera
+Galaxy S22 Ultra 128GB,android,none,12,noneP,good,good,43960.0,none
+Galaxy S22 Ultra 256GB,android,good,12,noneP,good,good,47960.0,none
+Galaxy S22+ 128GB,android,none,8,none,good,good,31960.0,none
+Galaxy S22+ 256GB,android,good,8,none,good,good,35960.0,none
+Galaxy S22 128GB,android,none,8,none,none,none,27960.0,none
+Galaxy S22 256GB,android,good,8,none,none,none,31960.0,none
+Galaxy Note 20 Ultra 128GB,android,none,12,good,good,good,51960.0,none
+Galaxy Note 20 Ultra 256GB,android,good,12,good,good,good,55960.0,none
+Galaxy Note 20 128GB,android,none,8,good,good,good,39960.0,none
+Galaxy Note 20 256GB,android,good,8,good,good,good,43960.0,none
+Xiaomi 15 Pro 256GB,android,good,12,good,good,good,31960.0,game
+Xiaomi 15 Pro 512GB,android,good,16,good,good,good,35960.0,game
+Xiaomi 15 Pro 1TB,16GB,android,16,good,good,39960.0,,game
+Xiaomi 15 256GB,android,good,12,good,good,good,27960.0,game
+Xiaomi 15 512GB,android,good,16,good,good,good,31960.0,game
+Xiaomi 14T Pro 256GB,android,good,12,good,good,good,25399.6,
+Xiaomi 14T Pro 512GB,android,good,12,good,good,good,31630.8,game
+Xiaomi 14T Pro 1TB,12GB,android,good,good,good,35960.0,,game
+Xiaomi 14T 256GB,android,good,12,good,good,good,23960.0,game
+Xiaomi 14T 512GB,android,good,12,good,good,good,27960.0,game
+Xiaomi 14 Pro 256GB,android,good,12,good,good,good,31960.0,game
+Xiaomi 14 Pro 512GB,android,good,12,good,good,good,35960.0,game
+Xiaomi 14 256GB,android,good,12,good,good,good,27960.0,game
+Xiaomi 14 512GB,android,good,12,good,good,good,31960.0,game
+Redmi Note 14 Pro+ 5G 128GB,android,none,8,good,good,good,14996.0,none
+Redmi Note 14 Pro+ 5G 256GB,android,good,12,good,good,good,15960.0,game
+Redmi Note 14 Pro+ 5G 512GB,android,good,16,good,good,good,17160.0,game
+Redmi Note 14 Pro 5G 128GB,android,none,8,good,good,good,13960.0,none
+Redmi Note 14 Pro 5G 256GB,android,good,12,good,good,good,15160.0,game
+Redmi Note 14 Pro 4G 128GB,android,none,6,good,good,good,11960.0,game
+Redmi Note 14 Pro 4G 256GB,android,good,8,good,good,good,13160.0,none
+Redmi Note 14 5G 128GB,android,none,6,none,good,good,11160.0,none
+Redmi Note 14 5G 256GB,android,good,8,none,good,good,12360.0,none
+Redmi Note 14 4G 128GB,android,none,4,none,good,good,9960.0,none
+Redmi Note 14 4G 256GB,android,good,6,none,good,good,11160.0,none
+Redmi 14C 5G 64GB,android,none,4,none,good,good,7960.0,none
+Redmi 14C 5G 128GB,android,none,6,none,good,good,9160.0,none

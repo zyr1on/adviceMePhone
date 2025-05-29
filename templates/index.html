@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefon Öneri Sistemi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-inter">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4">Telefon Öneri Sistemi</h1>
+            <p class="text-lg text-gray-400">İstediğiniz telefon özelliklerini yazın, size en uygun telefonları önerelim!</p>
+        </header>
+
+        <!-- Form -->
+        <form id="recommend-form" action="/recommend" method="POST" class="max-w-2xl mx-auto mb-12">
+            <div class="relative">
+                <input
+                    type="text"
+                    name="prompt"
+                    value="{{ prompt if prompt else '' }}"
+                    placeholder="Örnek: kamerası iyi olsun, ios olsun, 8gb ram, 15000 tl"
+                    class="w-full bg-gray-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                <button
+                    type="submit"
+                    class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg"
+                >
+                    Öner
+                </button>
+            </div>
+        </form>
+
+        <!-- Error Message -->
+        {% if error %}
+        <div class="max-w-2xl mx-auto bg-red-600 text-white p-4 rounded-lg mb-8">
+            {{ error }}
+        </div>
+        {% endif %}
+
+        <!-- Recommendations -->
+        {% if recommendations %}
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-semibold mb-6">📱 Önerilen Telefonlar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {% for phone in recommendations %}
+                <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">{{ phone.brand }}</h3>
+                    <p class="text-lg text-blue-400 mb-4">{{ phone.price }}</p>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>📱 İşletim Sistemi: {{ phone.os }}</li>
+                        <li>💾 Depolama: {{ phone.storage }}</li>
+                        <li>🧠 RAM: {{ phone.ram }}</li>
+                        <li>📸 Kamera: {{ phone.camera }}</li>
+                        <li>🔋 Batarya: {{ phone.battery }}</li>
+                        <li>📺 Ekran: {{ phone.screen }}</li>
+                        <li>🎯 Kullanım Amacı: {{ phone.usage }}</li>
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="mt-8 text-gray-400">
+                <p>📋 Toplam {{ recommendations|length }} telefon önerildi.</p>
+                <p>🛠️ Uygulanan Filtreler: {{ applied_filters|join(', ') if applied_filters else 'Yok' }}</p>
+                <p>📊 Ortalama Güven Skoru: {{ "%.2f"|format(avg_confidence) }}
+                    {% if avg_confidence >= 0.7 %}
+                    <span class="text-green-400">✅ Yüksek</span>
+                    {% elif avg_confidence >= 0.5 %}
+                    <span class="text-yellow-400">⚠️ Orta</span>
+                    {% else %}
+                    <span class="text-red-400">❌ Düşük</span>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        {% elif prompt and not error %}
+        <div class="max-w-2xl mx-auto bg-gray-800 text-gray-300 p-4 rounded-lg">
+            😕 Üzgünüz, kriterlerinize uygun telefon bulunamadı. Daha farklı özellikler deneyebilirsiniz.
+        </div>
+        {% endif %}
+
+        <!-- Raw Outputs (Optional for Debugging) -->
+        {% if raw_outputs %}
+        <div class="max-w-2xl mx-auto mt-8">
+            <h2 class="text-xl font-semibold mb-4">🤖 Ham Çıktılar</h2>
+            {% for idx in range(raw_outputs|length) %}
+            <div class="bg-gray-800 p-4 rounded-lg mb-4">
+                <p>{{ raw_outputs[idx] }}</p>
+                {% if extracted_values_list[idx] %}
+                <p class="text-gray-400">Çıkarılan Sayısal Değerler: 
+                    {% for key, value in extracted_values_list[idx].items() %}
+                        {{ key }}={{ value }}{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
