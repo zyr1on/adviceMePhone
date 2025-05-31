@@ -4,7 +4,7 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 
 ## 👥 Katkıda Bulunanlar
 
-- Semih Özdemir 	(model eğitimi, eğitim veri seti hazırlama )
+- Semih Özdemir 	(model eğitimi, eğitim veri seti hazırlama, proje organizasyonu )
 - Ozan Aydın 		  (model eğitimi, eğitim veri seti hazırlama )
 - Eren Boylu 		  (backend, veri temizliği, filtreleme, telefon veriseti )
 - Muhsin Yılmaz 	(backend, frontend, eğitim veri seti hazırlama ve düzenleme )
