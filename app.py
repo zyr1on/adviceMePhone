@@ -1,18 +1,19 @@
 try:
-	from flask import Flask, render_template, request
-	from phone_recommender import PhonePredictor
-	from phone_recommender2 import PhonePredictor2
-	import os
+    from flask import Flask, render_template, request
+    from phone_recommender import PhonePredictor
+    from phone_recommender2 import PhonePredictor2
+    import os
 except ImportError as e:
-	print("\n[!] Gerekli modüller yüklenemedi:")
-	print(f"    -> {e}")
-	print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
-	print("    python3 install.py\n")
-	
+    print("\n[!] Gerekli modüller yüklenemedi:")
+    print(f"    -> {e}")
+    print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
+    print("    python3 install.py\n")
+
 app = Flask(__name__)
 
 # Model seçimi için başlatıcı
 def get_predictor(model_choice):
+    """Model seçimine göre doğru tahmin edici nesnesini döndürür."""
     if model_choice == "pkl":
         return PhonePredictor(model_path="enhanced_phone_model.pkl", data_path="phones.csv")
     elif model_choice == "pt":
@@ -102,6 +103,7 @@ def recommend():
         )
 
     except Exception as e:
+        # Hata durumunda, detaylı hata mesajı veriyoruz
         return render_template("index.html", error=f"Hata oluştu: {str(e)}", prompt=user_input, model_choice=model_choice)
 
 if __name__ == "__main__":
