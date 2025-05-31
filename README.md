@@ -40,15 +40,16 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 │   └── js/
 │       └── script.js           # JavaScript mantığı
 ├── train/
+│   ├── training_data.txt       # Model eğitmek için eğitim veri seti
 │   ├── t5/
-│   │   ├── train.py            # T5 model eğitimi
-│   │   └── predict.py          # T5 model tahmini
-│   └── pkl/
+│   │   ├── train.py            # T5-base model eğitimi
+│   │   └── predict.py          # T5-base model tahmini
+│   ├── pkl/
 │   │   ├── train.py            # PKL model eğitimi
 │   │   └── predict.py          # PKL model tahmini
-│   └── distelbert/
-│       ├── train.py            # PKL model eğitimi
-│       └── predict.py          # PKL model tahmini
+│   └── dbert/
+│       ├── train.py            # DistilBERT model eğitimi
+│       └── predict.py          # DistilBERT model tahmini
 
 ```
 
