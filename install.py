@@ -24,6 +24,7 @@ if not os.path.exists("model.pt"):
     import gdown
     url = 'https://drive.google.com/uc?export=download&id=1vtK37taMctc1mMG84Mx1OHN0DItJY3hW'
     output= 'model.pt'
+    print("Model dosyası yükleniyor.")
     gdown.download(url, output, quiet=False, proxy=False)
     print("Model dosyası yüklendi.")
     print("python3 app.py ile programı çalıştırabilirsiniz.")
