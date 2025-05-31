@@ -17,9 +17,8 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 ## 🚀 Özellikler
 
 - ✅ Doğal dilden telefon filtreleme (örn: "oyun için 8 GB RAM’li telefonlar")
-- 🤖 3 farklı model desteği:
+- 🤖 2 farklı model desteği:
   - **DistilBERT** tabanlı çok etiketli sınıflandırma (`model.pt`)
-  - **T5** tabanlı metinden etiket çıkarımı
   - **Traditional ML (.pkl)** modeli (`enhanced_phone_model.pkl`)
 - 🌐 Web arayüzü (HTML + JS + CSS)
 - 📊 `phones.csv`: telefon veritabanı (özellikleriyle birlikte)
@@ -57,19 +56,14 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 
 ```
 
-## 🧠 Modellerin Açıklaması
+## 🧠 Kullanılan Modellerin Açıklaması
 
 ### 🔹 1. BERT (PyTorch - `model.pt`)
 - Çoklu etiket sınıflandırması.
 - Girdi: doğal dil prompt
 - Çıktı: `{ "os": "android", "ram": "8", "usage": "game", ... }`
 
-### 🔹 2. T5 (HuggingFace - `train/t5/`)
-- Sequence-to-sequence olarak çalışır.
-- `train.py`: modeli eğitir.
-- `predict.py`: metin girdisini JSON formatlı filtrelere çevirir.
-
-### 🔹 3. PKL (Traditional ML - `train/pkl/`)
+### 🔹 2. PKL (Traditional ML - `train/pkl/`)
 - TF-IDF + KNN / Logistic Regression tarzı klasik model.
 - Hızlıdır, ancak karmaşık promptları çözmede sınırlıdır.
 
@@ -83,15 +77,6 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 - Girdi olarak doğal dilde kullanıcı promptu alır.  
 - Çıktı olarak JSON formatında telefon filtreleme kriterleri üretir.  
 - Model, derin öğrenme sayesinde karmaşık ve özgün ifadeleri anlayabilir.
-
----
-
-### 🔹 2. T5 (HuggingFace - `train/t5/`)
-
-- Sequence-to-sequence (metinden metne) modeli.  
-- `train.py` ile sıfırdan veya transfer öğrenme ile model eğitilebilir.  
-- `predict.py` metin girdisini filtre kriterlerine dönüştürür.  
-- Daha esnek ve farklı yapılı promptlar için uygundur.
 
 ---
 
@@ -133,7 +118,7 @@ Prompt kutusuna doğal dilde bir istek girin:
 
 ### 2. Eğitim (isteğe bağlı)
 
-🔹 **T5 modeli eğitimi:**
+🔹 **T5 modeli eğitimi (kullanılmıyor) :**
 ```bash
 cd train/t5
 python train.py
