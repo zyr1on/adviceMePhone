@@ -30,3 +30,4 @@ if not os.path.exists("model.pt"):
     print("python3 app.py ile programı çalıştırabilirsiniz.")
 else:
     print("Model dosyası zaten mevcut\n 'python3 app.py' ile programı çalıştırabilirsiniz.")
+
