@@ -89,25 +89,22 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 ---
 
 
-## ⚙️ Kurulum
+## ⚙️ Kurulum/Installiation
 
 ```bash
 # direkt olarak install.py çalıştırılabilir
-
-python3 install.py
-
-# enhanced_phone_model.pkl dosyası hazır gelmekte
-# install.py ile gereklü kütüphaneler ve model dosyaları yüklenebilir.
-# veyahut modelin hali hazırda yüklü olduğu release/releasev1.0.0 kısmından release hali yüklenebilir.
-
+$ python3 install.py
 ```
+> enhanced_phone_model.pkl dosyası hazır gelmekte<br>
+> install.py ile gereklü kütüphaneler ve model dosyaları yüklenebilir.<br>
+> veyahut modelin hali hazırda yüklü olduğu release/releasev1.0.0 kısmından release hali yüklenebilir.<br>
 
-## 🚀 Kullanım
+## 🚀 Kullanım/Usage
 
 ### 1. Sunucuyu başlat
 
 ```bash
-python app.py
+$ python app.py
 ```
 
 Tarayıcıda `http://localhost:5000` adresine gidin.
@@ -126,8 +123,8 @@ python train.py
 
 🔹 **PKL modeli eğitimi:**
 ```bash
-cd train/pkl
-python train.py
+$ cd train/pkl
+$ python train.py
 ```
 
 ## 📊 Dataset Özellikleri (phones.csv)
