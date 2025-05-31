@@ -1,8 +1,14 @@
-import joblib
-import sys
-import os
-import pandas as pd
-import re
+try:
+	import joblib
+    import sys
+    import os
+    import pandas as pd
+    import re
+except ImportError as e:
+	print("\n[!] Gerekli modüller yüklenemedi:")
+	print(f"    -> {e}")
+	print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
+	print("    python3 install.py\n")
 
 class PhonePredictor:
     def __init__(self, model_path="enhanced_phone_model.pkl", data_path="phones.csv"):
