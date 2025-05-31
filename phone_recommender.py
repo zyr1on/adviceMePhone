@@ -1,14 +1,15 @@
 try:
-	import joblib
-    import sys
+    import joblib
     import os
     import pandas as pd
     import re
+    
 except ImportError as e:
-	print("\n[!] Gerekli modüller yüklenemedi:")
-	print(f"    -> {e}")
-	print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
-	print("    python3 install.py\n")
+    print("\n[!] Gerekli modüller yüklenemedi:")
+    print(f"    -> {e}")
+    print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
+    print("    python3 install.py\n")
+
 
 class PhonePredictor:
     def __init__(self, model_path="enhanced_phone_model.pkl", data_path="phones.csv"):
@@ -18,14 +19,14 @@ class PhonePredictor:
         self.phones_df = None
         self.load_model()
         self.load_data()
-    
+
     def load_model(self):
+        """Modeli yükler ve gerekli bileşenleri atar"""
         try:
             if not os.path.exists(self.model_path):
                 raise FileNotFoundError(f"Model dosyası '{self.model_path}' bulunamadı!")
             
             model_data = joblib.load(self.model_path)
-            
             self.vectorizer = model_data['vectorizer']
             self.models = model_data['models']
             self.label_encoders = model_data['label_encoders']
@@ -33,27 +34,29 @@ class PhonePredictor:
             self.feature_names = model_data['feature_names']
             self.best_params = model_data.get('best_params', {})
             self.pattern_dict = model_data.get('pattern_dict', {})
-            
+
         except Exception as e:
             raise Exception(f"Model yüklenirken hata: {e}")
-    
+
     def load_data(self):
-      try:
-          self.phones_df = pd.read_csv(self.data_path)
-          self.phones_df.columns = [col.lower().strip() for col in self.phones_df.columns]
-          if 'camera' in self.phones_df.columns:
-              self.phones_df.rename(columns={'camera': 'camera'}, inplace=True)
-          self.phones_df = self.phones_df.replace('noneP', 'none')
-          self.phones_df = self.phones_df.fillna('none')
-          self.phones_df['price'] = pd.to_numeric(self.phones_df['price'], errors='coerce').fillna(0.0)
-          self.phones_df['ram'] = pd.to_numeric(self.phones_df['ram'], errors='coerce').fillna(0.0)
-          for col in ['os', 'storage', 'camera', 'battery', 'screen', 'usage']:
-              if col in self.phones_df.columns:
-                  self.phones_df[col] = self.phones_df[col].str.lower().str.strip()
-      except Exception as e:
-          raise Exception(f"Veri seti yüklenirken hata: {e}")
-    
+        """Telefon verilerini yükler ve gerekli ön işlemleri yapar"""
+        try:
+            self.phones_df = pd.read_csv(self.data_path)
+            self.phones_df.columns = [col.lower().strip() for col in self.phones_df.columns]
+            if 'camera' in self.phones_df.columns:
+                self.phones_df.rename(columns={'camera': 'camera'}, inplace=True)
+            self.phones_df = self.phones_df.replace('noneP', 'none')
+            self.phones_df = self.phones_df.fillna('none')
+            self.phones_df['price'] = pd.to_numeric(self.phones_df['price'], errors='coerce').fillna(0.0)
+            self.phones_df['ram'] = pd.to_numeric(self.phones_df['ram'], errors='coerce').fillna(0.0)
+            for col in ['os', 'storage', 'camera', 'battery', 'screen', 'usage']:
+                if col in self.phones_df.columns:
+                    self.phones_df[col] = self.phones_df[col].str.lower().str.strip()
+        except Exception as e:
+            raise Exception(f"Veri seti yüklenirken hata: {e}")
+
     def advanced_preprocess_text(self, text):
+        """Kullanıcıdan alınan metni işleyip, çıkartılan özellikleri döndürür"""
         text = text.lower().strip()
         
         turkish_chars = {'ç': 'c', 'ğ': 'g', 'ı': 'i', 'ö': 'o', 'ş': 's', 'ü': 'u'}
@@ -81,8 +84,9 @@ class PhonePredictor:
                 text += f' FEATURE_{feature.upper()}'
         
         return text, extracted_values
-    
+
     def predict(self, input_text):
+        """Verilen metni işleyip, tahminleri döndürür"""
         features = [feat.strip() for feat in re.split(r'[,.]', input_text) if feat.strip()]
         
         if not features:
@@ -131,8 +135,9 @@ class PhonePredictor:
             extracted_values_list.append(extracted_values)
         
         return predictions_list, confidences_list, raw_outputs, extracted_values_list
-    
+
     def recommend_phones(self, predictions_list, confidences_list, extracted_values_list, top_n=None):
+        """Önerilen telefonları döndürür"""
         filtered_df = self.phones_df.copy()
         applied_filters = []
         
