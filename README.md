@@ -1,130 +1,181 @@
-# 📱 Akıllı Telefon Öneri Sistemi (T5-Base + Pandas + FLASK-UI)
+# 📱 Akıllı Telefon Tavsiye Sistemi (BERT, T5, PKL)
 
-Bu proje, kullanıcıdan **doğal dilde** gelen bir prompt'u alarak, bu prompt'u önceden eğitilmiş olarak anlamlandıran bir **T5-Base modelini** kullanır. Model, prompt'tan filtreleme kriterleri çıkartır ve ardından **Pandas** ile hazırlanmış telefon veri seti üzerinde bu kriterlere göre filtreleme yaparak en uygun telefonları önerir. Tüm süreç şık bir **kullanıcı arayüzü** üzerinden yürütülür.
+Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eğitilmiş bir yapay zeka sistemidir. Kullanıcıdan alınan doğal dildeki istekler (örneğin: _"oyun için 10 bin altı telefon öner"_) analiz edilerek filtre kriterlerine dönüştürülür ve uygun telefonlar listelenir.
+
+## 🚀 Özellikler
+
+- ✅ Doğal dilden telefon filtreleme (örn: "oyun için 8 GB RAM’li telefonlar")
+- 🤖 3 farklı model desteği:
+  - **DistilBERT** tabanlı çok etiketli sınıflandırma (`model.pt`)
+  - **T5** tabanlı metinden etiket çıkarımı
+  - **Traditional ML (.pkl)** modeli (`enhanced_phone_model.pkl`)
+- 🌐 Web arayüzü (HTML + JS + CSS)
+- 📊 `phones.csv`: telefon veritabanı (özellikleriyle birlikte)
 
 ---
 
-### Eğitim Kısmı
+# 📁 Proje Yapısı
 
-Model, Google Colab ortamında NVIDIA A100 GPU kullanılarak toplam **input-output** olacak şekilde 550'ye yakın veri ile birlikte--<br> **50 epoch ve 3e-5 lr** kullanılarak eğitildi.
-Eğitim için öğrenme oranını arttırmak için preprocess uygulandı. Bu preprocess işlemi türkçe karakter normalizasyonu ve tolower() kullanılarak yapıldı.
-
----
-
-## 🧠 Özellikler
-
-- 🔍 doğal dil girdisinden anlamlı filtreler üretir.  
-- 🧪 T5-Base ile prompt-to-filter dönüşümü.  
-- 📊 pandas ile veri üzerinde hızlı filtreleme.  
-- 🎨 sade ve modern kullanıcı arayüzü.  
----
-
-## 🚀 BAŞLANGIÇ
-
-### 1. Depoyu klonlamak için
-
-```bash
-git clone https://github.com/zyr1on/adviceMePhone/.git
-cd adviceMePhone
+```
+📁 Proje Kök Dizini
+├── app.py                      # Flask uygulaması (ana giriş noktası)
+├── model.pt                    # BERT tabanlı PyTorch modeli
+├── enhanced_phone_model.pkl    # Scikit-learn ile eğitilmiş PKL modeli
+├── phones.csv                  # Telefon veri seti
+├── labels.txt                  # Etiket tanımları
+├── requirements.txt            # Gerekli Python paketleri
+├── templates/
+│   └── index.html              # Web arayüzü HTML dosyası
+├── static/
+│   ├── css/
+│   │   └── style.css           # CSS stilleri
+│   └── js/
+│       └── script.js           # JavaScript mantığı
+├── train/
+│   ├── t5/
+│   │   ├── train.py            # T5 model eğitimi
+│   │   └── predict.py          # T5 model tahmini
+│   └── pkl/
+│       ├── train.py            # PKL model eğitimi
+│       └── predict.py          # PKL model tahmini
 ```
 
-### 2. Gereksinimleri Kurun
+## 🧠 Modellerin Açıklaması
 
-Python 3.8+ sürümü önerilir.
+### 🔹 1. BERT (PyTorch - `model.pt`)
+- Çoklu etiket sınıflandırması.
+- Girdi: doğal dil prompt
+- Çıktı: `{ "os": "android", "ram": "8", "usage": "game", ... }`
+
+### 🔹 2. T5 (HuggingFace - `train/t5/`)
+- Sequence-to-sequence olarak çalışır.
+- `train.py`: modeli eğitir.
+- `predict.py`: metin girdisini JSON formatlı filtrelere çevirir.
+
+### 🔹 3. PKL (Traditional ML - `train/pkl/`)
+- TF-IDF + KNN / Logistic Regression tarzı klasik model.
+- Hızlıdır, ancak karmaşık promptları çözmede sınırlıdır.
+
+---
+
+## 🧠 Modellerin Detayları
+
+### 🔹 1. BERT (PyTorch - `model.pt`)
+
+- DistilBERT mimarisi kullanılarak çoklu etiket sınıflandırması yapar.  
+- Girdi olarak doğal dilde kullanıcı promptu alır.  
+- Çıktı olarak JSON formatında telefon filtreleme kriterleri üretir.  
+- Model, derin öğrenme sayesinde karmaşık ve özgün ifadeleri anlayabilir.
+
+---
+
+### 🔹 2. T5 (HuggingFace - `train/t5/`)
+
+- Sequence-to-sequence (metinden metne) modeli.  
+- `train.py` ile sıfırdan veya transfer öğrenme ile model eğitilebilir.  
+- `predict.py` metin girdisini filtre kriterlerine dönüştürür.  
+- Daha esnek ve farklı yapılı promptlar için uygundur.
+
+---
+
+### 🔹 3. PKL (Geleneksel Makine Öğrenimi - `train/pkl/`)
+
+- TF-IDF + KNN veya Logistic Regression gibi klasik yöntemler kullanır.  
+- Daha hızlı tahmin yapar ancak karmaşık dil ifadelerinde sınırlı kalabilir.  
+- Eğitim ve tahmin scriptleri `train/pkl/` klasöründe bulunur.
+
+---
+
+
+## ⚙️ Kurulum
+
 ```bash
+# Ortamı oluştur
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+
+# Gerekli kütüphaneleri kur
 pip install -r requirements.txt
 ```
 
-### 3. Eğitim (Opsiyonel)
+## 🚀 Kullanım
 
-Modeli yeniden eğitmek istersen:
-
-```bash
-python t5/train_preprocess.py
-```
-
-> Eğitim dosyası: `t5/datas/training_data.txt`
-
-### 4. Tahmin/Filtreleme Modunu Başlat
+### 1. Sunucuyu başlat
 
 ```bash
-python3 t5/predict.py
+python app.py
 ```
 
-Arayüz üzerinden yazacağınız prompt örnekleri:
+Tarayıcıda `http://localhost:5000` adresine gidin.
 
-```
-"6 gb üzeri android telefon öner"
-"oyun için en iyi bataryalı telefon"
-```
+Prompt kutusuna doğal dilde bir istek girin:
 
----
+> "10 bin tl altı oyun telefonu önerir misin?"
 
-## 📁 Proje Yapısı
+### 2. Eğitim (isteğe bağlı)
 
-```
-📦 adviceMePhone
-├── 
-│   └── 
-├── model/
-│   ├── 
-│   └── 
-├── ui/
-│   └── 
-├── 
-├── 
-├── 
-├── 
-└── 
+🔹 **T5 modeli eğitimi:**
+```bash
+cd train/t5
+python train.py
 ```
 
----
-
-## 🔧 Kullanılan Teknolojiler
-
-| Teknoloji | Açıklama |
-|----------|----------|
-| 🧠 [T5-Base](https://huggingface.co/t5-base) | Prompt'tan filtre çıkarma |
-| 🐼 Pandas | Veri filtreleme |
-| 🖥️ Streamlit / Flask / Custom UI | GPT tarzı kullanıcı arayüzü |
-| 💾 CSV | Telefon veri seti (özellikler: RAM, fiyat, marka, batarya vs.) |
-
----
-
-## 💬 Örnek Promptlar ve Çıktılar
-
-### Prompt:
-```
-"6000 tl altı 6gb ramli oyun telefonu"
+🔹 **PKL modeli eğitimi:**
+```bash
+cd train/pkl
+python train.py
 ```
 
-### Model Output:
+## 📊 Dataset Özellikleri (phones.csv)
+
+Aşağıdaki özellikler modele input olarak verilir:
+
+- **os** (android / ios / none)
+- **ram** (GB)
+- **price** (TL)
+- **storage** (GB)
+- **camera** (MP)
+- **battery** (mAh)
+- **screen** (inç)
+- **usage** (oyun / sosyal / kameralı / none)
+- **brand** (samsung / xiaomi / apple / ...)
+- **link** (ürün linki)
+
+## 📦 API Endpoint (Geliştiriciler için)
+
+### POST /predict
+
+**İstek:**
+```json
+{
+  "input_text": "8 gb ramli android telefon öner"
+}
 ```
-price: 6000; brand:none; os:android; ram:6; usage:gaming; storage:none; battery:none; camera:none; screen:none;
+
+**Yanıt:**
+```json
+{
+  "predictions": [
+    {
+      "os": "android",
+      "ram": "8"
+    }
+  ],
+  "confidences": [
+    {
+      "os:android": 0.91,
+      "ram:8": 0.87
+    }
+  ],
+  "text_outputs": [
+    "8 gb ramli android telefon öner: os:android; ram:8"
+  ]
+}
 ```
 
-### Pandas Filtre Sonucu:
-| Prie (TL) | Brand  | Model          | İşletim Sistemi | Kullanım Amacı | RAM   | Hafıza | Batarya   | Kamera | Ekran |
-|------------|--------|----------------|------------------|----------------|-------|--------|-----------|--------|--------|
-| 5800       | Xiaomi | Redmi Note 10  | Android          | Game         | 6 GB  | good | good  | medium  | medium |
+## 👥 Katkıda Bulunanlar
 
-.......
----
-
-## ✨ Ekran Görüntüsü
-
-
----
-
-## 🧩 Geliştirici Notları
-
-- Eğitim verisi `prompt -> filtre` eşleşmeleri içerir.
-- Model eğitimi HuggingFace Transformers ile yapılmıştır.
-- Arayüz kısmı, ilk prompt sonrası animasyonlu olarak aşağı kayan sabit prompt kutusu ve typewriter efektiyle çıktı göstermektedir.
-
----
-
-
-test
-
-eren
+- Semih Özdemir 	(model eğitimi)
+- Ozan Aydın 		(model eğitimi)
+- Eren Boylu 		(veri temizliği, filtreleme, telefon veriseti)
+- Muhsin Yılmaz 	(backend, ui, eğitim veri seti hazırlığı)
