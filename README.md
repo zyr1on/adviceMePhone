@@ -45,8 +45,8 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 │   │   ├── train.py            # T5-base model eğitimi
 │   │   └── predict.py          # T5-base model tahmini
 │   ├── pkl/
-│   │   ├── train.py            # PKL model eğitimi
-│   │   └── predict.py          # PKL model tahmini
+│   │   ├── train.py            # TF-IDF model eğitimi
+│   │   └── predict.py          # TF-IDF model tahmini
 │   └── dbert/
 │       ├── train.py            # DistilBERT model eğitimi
 │       └── predict.py          # DistilBERT model tahmini
