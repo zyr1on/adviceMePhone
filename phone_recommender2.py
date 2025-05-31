@@ -1,8 +1,14 @@
-import torch
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, DistilBertConfig
-import pandas as pd
-import re
-import csv
+try:
+	import torch
+    from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, DistilBertConfig
+    import pandas as pd
+    import re
+    import csv
+except ImportError as e:
+	print("\n[!] Gerekli modüller yüklenemedi:")
+	print(f"    -> {e}")
+	print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
+	print("    python3 install.py\n")
 
 class PhonePredictor2:
     def __init__(self, model_path="model.pt", data_path="phones.csv", labels_path="labels.txt"):
