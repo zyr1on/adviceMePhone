@@ -21,6 +21,6 @@ except subprocess.CalledProcessError as e:
 
 print("Model dosyası yükleniyor....")
 url = 'https://drive.google.com/uc?export=download&id=1vtK37taMctc1mMG84Mx1OHN0DItJY3hW'
-output= 'model.pt’
+output= 'model.pt'
 gdown.download(url, output, quiet=False, proxy=False)
 print("Model dosyası yüklendi")
