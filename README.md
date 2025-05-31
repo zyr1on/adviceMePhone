@@ -80,7 +80,7 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 
 ---
 
-### 🔹 3. PKL (Geleneksel Makine Öğrenimi - `train/pkl/`)
+### 🔹 2. PKL (Geleneksel Makine Öğrenimi - `train/pkl/`)
 
 - TF-IDF + KNN veya Logistic Regression gibi klasik yöntemler kullanır.  
 - Daha hızlı tahmin yapar ancak karmaşık dil ifadelerinde sınırlı kalabilir.  
