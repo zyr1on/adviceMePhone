@@ -90,12 +90,8 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 ## ⚙️ Kurulum
 
 ```bash
-# Ortamı oluştur
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-# Gerekli kütüphaneleri kur
-pip install -r requirements.txt
+# direkt olarak install.py çalıştırılabilir
+python3 install.py
 ```
 
 ## 🚀 Kullanım
