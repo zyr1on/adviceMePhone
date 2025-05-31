@@ -2,6 +2,10 @@
 
 Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eğitilmiş bir yapay zeka sistemidir. Kullanıcıdan alınan doğal dildeki istekler (örneğin: _"oyun için 10 bin altı telefon öner"_) analiz edilerek filtre kriterlerine dönüştürülür ve uygun telefonlar listelenir.
 
+# Ekran Görüntüsü
+
+<img src="screenshot.png"></img>
+
 ## 👥 Katkıda Bulunanlar
 
 - Semih Özdemir 	(model eğitimi, eğitim veri seti hazırlama, proje organizasyonu )
