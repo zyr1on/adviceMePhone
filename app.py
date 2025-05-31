@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from phone_recommender import PhonePredictor
 from phone_recommender2 import PhonePredictor2
+import os
 
 app = Flask(__name__)
 
@@ -9,6 +10,8 @@ def get_predictor(model_choice):
     if model_choice == "pkl":
         return PhonePredictor(model_path="enhanced_phone_model.pkl", data_path="phones.csv")
     elif model_choice == "pt":
+        if not os.path.exists("model.pt"):
+            raise FileNotFoundError("model.pt bulunamadı. Lütfen 'python.exe install.py' komutunu çalıştırın.")
         return PhonePredictor2(model_path="model.pt", data_path="phones.csv", labels_path="labels.txt")
     else:
         raise ValueError("Geçersiz model seçimi!")
