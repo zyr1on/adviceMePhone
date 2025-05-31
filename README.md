@@ -104,6 +104,8 @@ python3 install.py
 
 # enhanced_phone_model.pkl dosyası hazır gelmekte
 # install.py ile gereklü kütüphaneler ve model dosyaları yüklenebilir.
+# veyahut modelin hali hazırda yüklü olduğu release/releasev1.0.0 kısmından release hali yüklenebilir.
+
 ```
 
 ## 🚀 Kullanım
