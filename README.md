@@ -2,6 +2,14 @@
 
 Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eğitilmiş bir yapay zeka sistemidir. Kullanıcıdan alınan doğal dildeki istekler (örneğin: _"oyun için 10 bin altı telefon öner"_) analiz edilerek filtre kriterlerine dönüştürülür ve uygun telefonlar listelenir.
 
+## 👥 Katkıda Bulunanlar
+
+- Semih Özdemir 	(model eğitimi, eğitim veri seti hazırlama )
+- Ozan Aydın 		  (model eğitimi, eğitim veri seti hazırlama )
+- Eren Boylu 		  (backend, veri temizliği, filtreleme, telefon veriseti )
+- Muhsin Yılmaz 	(backend, frontend, eğitim veri seti hazırlama ve düzenleme )
+
+
 ## 🚀 Özellikler
 
 - ✅ Doğal dilden telefon filtreleme (örn: "oyun için 8 GB RAM’li telefonlar")
@@ -91,7 +99,11 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 
 ```bash
 # direkt olarak install.py çalıştırılabilir
+
 python3 install.py
+
+# enhanced_phone_model.pkl dosyası hazır gelmekte
+# install.py ile gereklü kütüphaneler ve model dosyaları yüklenebilir.
 ```
 
 ## 🚀 Kullanım
@@ -169,9 +181,4 @@ Aşağıdaki özellikler modele input olarak verilir:
 }
 ```
 
-## 👥 Katkıda Bulunanlar
 
-- Semih Özdemir 	(model eğitimi)
-- Ozan Aydın 		(model eğitimi)
-- Eren Boylu 		(veri temizliği, filtreleme, telefon veriseti)
-- Muhsin Yılmaz 	(backend, ui, eğitim veri seti hazırlığı)
