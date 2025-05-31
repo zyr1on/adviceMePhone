@@ -1,14 +1,15 @@
 try:
-	import torch
+    import torch
     from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, DistilBertConfig
     import pandas as pd
     import re
     import csv
 except ImportError as e:
-	print("\n[!] Gerekli modüller yüklenemedi:")
-	print(f"    -> {e}")
-	print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
-	print("    python3 install.py\n")
+    print("\n[!] Gerekli modüller yüklenemedi:")
+    print(f"    -> {e}")
+    print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
+    print("    python3 install.py\n")
+
 
 class PhonePredictor2:
     def __init__(self, model_path="model.pt", data_path="phones.csv", labels_path="labels.txt"):
@@ -26,6 +27,7 @@ class PhonePredictor2:
         self.load_labels()
 
     def load_model(self):
+        """Modeli yükler ve gerekli parametreleri başlatır"""
         try:
             self.tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
             with open(self.labels_path, "r", encoding="utf-8") as f:
@@ -43,6 +45,7 @@ class PhonePredictor2:
             raise Exception(f"Model yüklenirken hata: {e}")
 
     def load_data(self):
+        """Telefon verisini yükler ve ön işlemleri yapar"""
         try:
             self.phones_df = pd.read_csv(self.data_path, quoting=csv.QUOTE_NONNUMERIC)
             self.phones_df.columns = [col.lower().strip() for col in self.phones_df.columns]
@@ -57,12 +60,14 @@ class PhonePredictor2:
             raise Exception(f"Veri seti yüklenirken hata: {e}")
 
     def load_labels(self):
+        """Etiketleri yükler ve id2label sözlüğünü oluşturur"""
         try:
             self.id2label = {i: label for i, label in enumerate(self.labels)}
         except Exception as e:
             raise Exception(f"Etiketler yüklenirken hata: {e}")
 
     def add_label_with_conflict_check(self, predicted_labels, new_label):
+        """Çakışmaları engellemek için yeni etiket ekler"""
         category = new_label.split(':')[0]
         for label in list(predicted_labels):
             if label.startswith(category + ':'):
@@ -71,6 +76,7 @@ class PhonePredictor2:
             predicted_labels.append(new_label)
 
     def predict(self, input_text, threshold=0.41):
+        """Verilen metne göre telefon özelliklerini tahmin eder"""
         encoded = self.tokenizer.encode_plus(
             input_text,
             add_special_tokens=True,
@@ -102,6 +108,7 @@ class PhonePredictor2:
         return [predictions], [confidences], [f"{input_text}: " + "; ".join(f"{k}:{v}" for k, v in predictions.items())], [{}]
 
     def recommend_phones(self, predictions_list, confidences_list, extracted_values_list, top_n=None):
+        """Tahminlere göre telefon önerileri yapar"""
         filtered_df = self.phones_df.copy()
         applied_filters = []
         
