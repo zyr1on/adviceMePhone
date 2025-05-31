@@ -1,8 +1,14 @@
-from flask import Flask, render_template, request
-from phone_recommender import PhonePredictor
-from phone_recommender2 import PhonePredictor2
-import os
-
+try:
+	from flask import Flask, render_template, request
+	from phone_recommender import PhonePredictor
+	from phone_recommender2 import PhonePredictor2
+	import os
+except ImportError as e:
+	print("\n[!] Gerekli modüller yüklenemedi:")
+	print(f"    -> {e}")
+	print("\nLütfen gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:")
+	print("    python3 install.py\n")
+	
 app = Flask(__name__)
 
 # Model seçimi için başlatıcı
