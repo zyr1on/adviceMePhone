@@ -6,7 +6,7 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 
 <img src="screenshot.png"></img>
 
-## 👥 Katkıda Bulunanlar
+## Katkıda Bulunanlar
 
 - Semih Özdemir 	(model eğitimi, eğitim veri seti hazırlama, proje organizasyonu )
 - Ozan Aydın 		  (model eğitimi, eğitim veri seti hazırlama )
@@ -14,7 +14,7 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 - Muhsin Yılmaz 	(backend, frontend, eğitim veri seti hazırlama ve düzenleme )
 
 
-## 🚀 Özellikler
+## Özellikler
 
 - ✅ Doğal dilden telefon filtreleme (örn: "oyun için 8 GB RAM’li telefonlar")
 - 🤖 2 farklı model desteği:
@@ -25,7 +25,7 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 
 ---
 
-# 📁 Proje Yapısı
+# Proje Yapısı
 
 ```
 📁 Proje Kök Dizini
@@ -56,22 +56,22 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 
 ```
 
-## 🧠 Kullanılan Modellerin Açıklaması
+## Kullanılan Modellerin Açıklaması
 
-### 🔹 1. BERT (PyTorch - `model.pt`)
+### 1. BERT (PyTorch - `model.pt`)
 - Çoklu etiket sınıflandırması.
 - Girdi: doğal dil prompt
 - Çıktı: `{ "os": "android", "ram": "8", "usage": "game", ... }`
 
-### 🔹 2. PKL (Traditional ML - `train/pkl/`)
+### 2. PKL (Traditional ML - `train/pkl/`)
 - TF-IDF + KNN / Logistic Regression tarzı klasik model.
 - Hızlıdır, ancak karmaşık promptları çözmede sınırlıdır.
 
 ---
 
-## 🧠 Modellerin Detayları
+## Modellerin Detayları
 
-### 🔹 1. BERT (PyTorch - `model.pt`)
+### 1. BERT (PyTorch - `model.pt`)
 
 - DistilBERT mimarisi kullanılarak çoklu etiket sınıflandırması yapar.  
 - Girdi olarak doğal dilde kullanıcı promptu alır.  
@@ -80,7 +80,7 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 
 ---
 
-### 🔹 2. PKL (Geleneksel Makine Öğrenimi - `train/pkl/`)
+### 2. PKL (Geleneksel Makine Öğrenimi - `train/pkl/`)
 
 - TF-IDF + KNN veya Logistic Regression gibi klasik yöntemler kullanır.  
 - Daha hızlı tahmin yapar ancak karmaşık dil ifadelerinde sınırlı kalabilir.  
@@ -89,7 +89,7 @@ Bu proje, doğal dil girdilerine göre en uygun telefonları önermek için eği
 ---
 
 
-## ⚙️ Kurulum/Installiation
+## Kurulum/Installiation
 
 ```bash
 # direkt olarak install.py çalıştırılabilir
@@ -99,7 +99,7 @@ $ python3 install.py
 > install.py ile gereklü kütüphaneler ve model dosyaları yüklenebilir.<br>
 > veyahut modelin hali hazırda yüklü olduğu release/releasev1.0.0 kısmından release hali yüklenebilir.<br>
 
-## 🚀 Kullanım/Usage
+## Kullanım/Usage
 
 ### 1. Sunucuyu başlat
 
@@ -127,7 +127,7 @@ $ cd train/pkl
 $ python train.py
 ```
 
-## 📊 Dataset Özellikleri (phones.csv)
+## Dataset Özellikleri (phones.csv)
 
 Aşağıdaki özellikler modele input olarak verilir:
 
